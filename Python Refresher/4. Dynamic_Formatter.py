@@ -23,7 +23,7 @@ message = input("Enter the main message: ").strip()
 # Get positional arguments
 args_input = input("Enter positional arguments separated by commas (or leave blank): ").strip()
 if args_input:
-    args = [arg.strip() for arg in args_input.split(",")]
+    args = [item.strip() for item in args_input.split(",")]
 else:
     args = []
 
