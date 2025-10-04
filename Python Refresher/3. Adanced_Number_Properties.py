@@ -1,20 +1,20 @@
-
-# Description: Write a function check_number(n) that takes a positive integer n and determines if it is a prime number, a perfect square, or both.
-# The function should return a formatted string with the result.
-# If prime and a perfect square: "n is both a prime and a perfect square."
-# If only prime: "n is a prime number."
-# If only a perfect square: "n is a perfect square."
-# If neither: "n is neither a prime nor a perfect square."
-# Example 1:
-# Input: n = 7
-# Output: "7 is a prime number."
-# Example 2:
-# Input: n = 49
-# Output: "49 is a perfect square." (Note: 49 is not prime)
-# Example 3:
-# Input: n = 10
-# Output: "10 is neither a prime nor a perfect square."
-
+"""
+Description: Write a function check_number(n) that takes a positive integer n and determines if it is a prime number, a perfect square, or both.
+The function should return a formatted string with the result.
+If prime and a perfect square: "n is both a prime and a perfect square."
+If only prime: "n is a prime number."
+If only a perfect square: "n is a perfect square."
+If neither: "n is neither a prime nor a perfect square."
+Example 1:
+Input: n = 7
+Output: "7 is a prime number."
+Example 2:
+Input: n = 49
+Output: "49 is a perfect square." (Note: 49 is not prime)
+Example 3:
+Input: n = 10
+Output: "10 is neither a prime nor a perfect square."
+"""
 
 def check_number(n):
 	if n <= 0:
