@@ -7,3 +7,9 @@ Example 2:
 Input: s = "python"
 Output: False
 """
+
+def is_palindrome_slicing(s):
+    return s == s[::-1]
+
+s = input("Enter the string: ").lower()
+print(is_palindrome_slicing(s))
