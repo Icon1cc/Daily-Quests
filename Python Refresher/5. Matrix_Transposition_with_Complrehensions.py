@@ -28,6 +28,9 @@ matrix = []
 for i in range(rows):
     row = list(map(int, input(f"Enter row {i+1} (space separated): ").split()))
     matrix.append(row)
+    
+# transposed = [[matrix[j][i] for j in range(row)] for i in range(col)]
+# transposed = [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[0]))]
 
 print("Matrix =", matrix)
 transposed_matrix = transpose(matrix)
