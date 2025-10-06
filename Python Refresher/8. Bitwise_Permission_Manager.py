@@ -12,3 +12,23 @@ Example 2:
 Input: current_permissions = 7 (READ + WRITE + EXECUTE), action = "REMOVE", permission_type = 4 (READ)
 Output: 3 (WRITE + EXECUTE)
 """
+def manage_permissions(current_permissions, action, permission_type):
+    READ = 4
+    WRITE = 2
+    EXECUTE = 1
+
+    if action == "ADD":
+        result = current_permissions | permission_type
+    else:
+        result = current_permissions & ~permission_type
+
+    return result
+
+current_permissions = int(input("Enter current permissions: "))
+action = input("Enter action (ADD or REMOVE): ").strip().upper()
+permission_type = int(input("Enter permission type (4=READ, 2=WRITE, 1=EXECUTE): "))
+
+new_permissions = manage_permissions(current_permissions, action, permission_type)
+
+print("Updated permissions:", new_permissions)
+
