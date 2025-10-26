@@ -1174,7 +1174,3 @@ Binary representation can optimize operations:
 5. **Explain your thought process** clearly
 
 ---
-
-**Good luck with your DSA preparation! 🚀**
-
-*Come back to these notes anytime you need a refresher. Everything is explained from first principles!*
