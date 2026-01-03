@@ -3,7 +3,7 @@ Print numbers from N to 1 using recursion.
 """
 
 def print_N_to_1(n):
-    if n == 0:
+    if n <= 0:
         return
     print(n)
     print_N_to_1(n - 1)
