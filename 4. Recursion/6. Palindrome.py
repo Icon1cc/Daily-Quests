@@ -2,12 +2,12 @@
 Write a recursive function to check if a given string is a palindrome.
 """
 
-def is_palindrome(s):
-    if len(s) <= 1:
+def is_palindrome(s, start, end):
+    if  start >= end:
         return True
-    if s[0] != s[-1]:
+    if s[start] != s[end]:
         return False
-    return is_palindrome(s[1:-1])
+    return is_palindrome(s, start + 1, end - 1)
 try:    
     S = input("Enter a string to check if it is a palindrome: ")
     result = is_palindrome(S)
