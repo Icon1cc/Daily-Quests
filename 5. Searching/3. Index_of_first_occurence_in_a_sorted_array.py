@@ -6,8 +6,6 @@ If the element is not found, return -1.
 def index_of_first_occurrence(arr, target, left, right):
     left = 0
     right = len(arr) - 1
-    if left > right:
-        return -1
     while left <= right:
         mid = (left + right) // 2
         if arr[mid] == target:
