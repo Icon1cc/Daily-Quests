@@ -1,141 +1,179 @@
-# Daily-Quests - DSA Practice in Python
+# DAILY-QUESTS - Data Structures & Algorithms
 
-A comprehensive repository for practicing Data Structures and Algorithms (DSA) in Python. This repository contains organized problems and solutions across various DSA topics.
+A comprehensive collection of DSA problems and solutions organized by topic. Each section contains detailed explanations, complexity analysis, and implementation code.
 
-## 📚 Topics Covered
+---
 
-### 1. Arrays and Strings
-- Common array manipulation problems
-- String algorithms
-- Two-pointer techniques
-- Sliding window problems
+## 📚 Completed Topics
 
-### 2. Linked Lists
-- Singly and doubly linked lists
-- Cycle detection
-- Reversal and manipulation
-- Fast and slow pointer techniques
+### 1. Python Refresher
+**Status:** ✅ Complete  
+Basic Python concepts and syntax refresher.
 
-### 3. Stacks and Queues
-- Stack implementation and applications
-- Queue implementation and variations
-- Monotonic stack problems
-- Priority queues
+📁 [Go to folder](./1.%20Python%20Refresher/)
 
-### 4. Trees and Graphs
-- Binary trees and BST
-- Tree traversals (DFS, BFS)
-- Graph algorithms
-- Shortest path problems
+---
 
-### 5. Sorting and Searching
-- Various sorting algorithms
-- Binary search and variants
-- Quick select
-- Merge operations
+### 2. Mathematics
+**Status:** ✅ Complete  
+Mathematical algorithms and number theory problems including GCD, LCM, prime numbers, factorization, and more.
 
-### 6. Dynamic Programming
-- Memoization and tabulation
-- Classic DP problems
-- Optimization techniques
-- State machines
+📁 [Go to folder](./2.%20Mathematics/) | 📖 [View detailed README](./2.%20Mathematics/README.md)
 
-### 7. Hash Tables
-- Hash map implementations
-- Two-sum variants
-- Frequency counting
-- Design problems
+---
 
-### 8. Heaps
-- Min heap and max heap
-- K-way merge
-- Top K problems
-- Priority queue applications
+### 3. Lists
+**Status:** ✅ Complete  
+Essential list operations and algorithms in Python.
 
-## 🚀 Getting Started
+📁 [Go to folder](./3.%20Lists/) | 📖 [View detailed README](./3.%20Lists/README.md)
 
-### Prerequisites
-- Python 3.8 or higher
-- Basic understanding of Python programming
+---
 
-### Running Solutions
-```bash
-# Run a specific solution
-python3 arrays_and_strings/two_sum.py
+### 4. Recursion
+**Status:** ✅ Complete  
+Recursive problem-solving techniques and patterns.
 
-# Run with custom input
-python3 arrays_and_strings/two_sum.py
-```
+📁 [Go to folder](./4.%20Recursion/) | 📖 [View detailed README](./4.%20Recursion/README.md)
 
-### Running Tests
-```bash
-# Run all tests
-python3 -m pytest
+---
 
-# Run tests for a specific topic
-python3 -m pytest arrays_and_strings/
-```
+### 5. Searching
+**Status:** ✅ Complete  
+Searching algorithms with focus on binary search and its variations.
 
-## 📝 Problem Structure
+📁 [Go to folder](./5.%20Searching/) | 📖 [View detailed README](./5.%20Searching/README.md)
 
-Each problem file follows this structure:
-```python
-"""
-Problem: [Problem Name]
-Difficulty: Easy/Medium/Hard
+---
 
-Description:
-[Problem description]
+### 6. Sorting
+**Status:** ✅ Complete  
+Comprehensive coverage of sorting algorithms with complexity analysis.
 
-Example:
-Input: [example input]
-Output: [example output]
+📁 [Go to folder](./6.%20Sorting/) | 📖 [View detailed README](./6.%20Sorting/README.md)
 
-Constraints:
-- [constraint 1]
-- [constraint 2]
-"""
+---
 
-def solution(input_param):
-    """
-    Time Complexity: O(?)
-    Space Complexity: O(?)
-    """
-    pass
+## 🚧 Upcoming Topics
 
-if __name__ == "__main__":
-    # Test cases
-    pass
-```
+### 7. Hashing
+Hash tables, hash maps, and collision handling techniques.
 
-## 📈 Progress Tracking
+📁 [Go to folder](./7.%20Hashing/)
 
-Track your progress by marking completed problems:
-- [ ] Arrays and Strings - Two Sum
-- [ ] Arrays and Strings - Best Time to Buy and Sell Stock
-- [ ] Linked Lists - Reverse Linked List
-- [ ] Trees and Graphs - Binary Tree Inorder Traversal
-- [ ] Dynamic Programming - Climbing Stairs
+---
 
-## 💡 Tips for Practice
+### 8. String
+String manipulation, pattern matching, and string algorithms.
 
-1. **Start with Easy**: Begin with easy problems to build confidence
-2. **Understand Time/Space Complexity**: Always analyze your solution
-3. **Multiple Approaches**: Try to solve problems in different ways
-4. **Review Regularly**: Revisit problems after some time
-5. **Test Thoroughly**: Write comprehensive test cases
+📁 [Go to folder](./8.%20String/)
 
-## 🔗 Resources
+---
 
-- [LeetCode](https://leetcode.com/)
-- [HackerRank](https://www.hackerrank.com/)
-- [GeeksforGeeks](https://www.geeksforgeeks.org/)
-- [Cracking the Coding Interview](https://www.crackingthecodinginterview.com/)
+### 9. Linked List
+Singly, doubly, and circular linked lists with operations.
 
-## 🤝 Contributing
+📁 [Go to folder](./9.%20Linked%20List/)
 
-Feel free to add new problems, improve existing solutions, or fix bugs!
+---
 
-## 📄 License
+### 10. Circular Linked List
+Circular linked list implementations and applications.
 
-This repository is for educational purposes.
+📁 [Go to folder](./10.%20Circular%20Linked%20List/)
+
+---
+
+### 11. Doubly Linked List
+Doubly linked list operations and use cases.
+
+📁 [Go to folder](./11.%20Doubly%20Linked%20List/)
+
+---
+
+### 12. Stack
+Stack data structure and applications.
+
+📁 [Go to folder](./12.%20Stack/)
+
+---
+
+### 13. Queue
+Queue implementations and variants.
+
+📁 [Go to folder](./13.%20Queue/)
+
+---
+
+### 14. Deque
+Double-ended queue operations.
+
+📁 [Go to folder](./14.%20Deque/)
+
+---
+
+### 15. Tree
+Binary trees, BST, and tree traversals.
+
+📁 [Go to folder](./15.%20Tree/)
+
+---
+
+### 16. Binary Search Tree
+Binary search tree operations and applications.
+
+📁 [Go to folder](./16.%20Binary%20Search%20Tree/)
+
+---
+
+### 17. Heap
+Min-heap, max-heap, and priority queues.
+
+📁 [Go to folder](./17.%20Heap/)
+
+---
+
+## 🎯 How to Use This Repository
+
+1. **Navigate to a topic folder** to see all implementations
+2. **Read the detailed README** in each folder for:
+   - Concept explanations
+   - Time and space complexity analysis
+   - Multiple approaches and optimizations
+   - When to use each algorithm
+3. **Check the code files** for actual implementations
+4. **Use as a reference** during problem-solving and interviews
+
+---
+
+## 📖 Study Guide
+
+### For Beginners
+Start with the following sequence:
+1. **Mathematics** - Build problem-solving foundation
+2. **Lists** - Master basic data structure operations
+3. **Recursion** - Learn recursive thinking
+4. **Searching** - Understand binary search
+5. **Sorting** - Compare different algorithms
+
+### For Interview Preparation
+Focus on these high-frequency topics:
+- **Sorting & Searching** - Most common in coding interviews
+- **Hashing** - Fast lookups and counting
+- **Linked List** - Pointer manipulation
+- **Stack & Queue** - Implementation and applications
+- **Tree & BST** - Hierarchical data structures
+
+---
+
+## 📝 Notes
+
+- All implementations are in **Python**
+- Focus on **understanding concepts** over memorization
+- Practice **complexity analysis** for each algorithm
+- Try to **implement from scratch** before checking solutions
+
+---
+
+**Last Updated:** January 2026  
+**Status:** Active Development - Currently completing Sorting section
