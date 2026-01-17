@@ -18,7 +18,7 @@ Basic Python concepts and syntax refresher.
 **Status:** ✅ Complete  
 Mathematical algorithms and number theory problems including GCD, LCM, prime numbers, factorization, and more.
 
-📁 [Go to folder](./2.%20Mathematics/) | 📖 [View detailed README](./2.%20Mathematics/README.md)
+📁 [Go to folder](./2.%20Mathematics/) | 📖 [View detailed readme](./2.%20Mathematics/readme.md)
 
 ---
 
@@ -26,7 +26,7 @@ Mathematical algorithms and number theory problems including GCD, LCM, prime num
 **Status:** ✅ Complete  
 Essential list operations and algorithms in Python.
 
-📁 [Go to folder](./3.%20Lists/) | 📖 [View detailed README](./3.%20Lists/README.md)
+📁 [Go to folder](./3.%20Lists/) | 📖 [View detailed readme](./3.%20Lists/readme.md)
 
 ---
 
@@ -34,7 +34,7 @@ Essential list operations and algorithms in Python.
 **Status:** ✅ Complete  
 Recursive problem-solving techniques and patterns.
 
-📁 [Go to folder](./4.%20Recursion/) | 📖 [View detailed README](./4.%20Recursion/README.md)
+📁 [Go to folder](./4.%20Recursion/) | 📖 [View detailed readme](./4.%20Recursion/readme.md)
 
 ---
 
@@ -42,7 +42,7 @@ Recursive problem-solving techniques and patterns.
 **Status:** ✅ Complete  
 Searching algorithms with focus on binary search and its variations.
 
-📁 [Go to folder](./5.%20Searching/) | 📖 [View detailed README](./5.%20Searching/README.md)
+📁 [Go to folder](./5.%20Searching/) | 📖 [View detailed readme](./5.%20Searching/readme.md)
 
 ---
 
@@ -50,7 +50,7 @@ Searching algorithms with focus on binary search and its variations.
 **Status:** ✅ Complete  
 Comprehensive coverage of sorting algorithms with complexity analysis.
 
-📁 [Go to folder](./6.%20Sorting/) | 📖 [View detailed README](./6.%20Sorting/README.md)
+📁 [Go to folder](./6.%20Sorting/) | 📖 [View detailed readme](./6.%20Sorting/readme.md)
 
 ---
 
@@ -136,7 +136,7 @@ Min-heap, max-heap, and priority queues.
 ## 🎯 How to Use This Repository
 
 1. **Navigate to a topic folder** to see all implementations
-2. **Read the detailed README** in each folder for:
+2. **Read the detailed readme** in each folder for:
    - Concept explanations
    - Time and space complexity analysis
    - Multiple approaches and optimizations
