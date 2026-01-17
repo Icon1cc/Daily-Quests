@@ -32,5 +32,6 @@ try:
     arr2 = list(map(int, input("Enter elements of second sorted array (space-separated): ").strip().split()))
     print("Union of the two sorted arrays is:")
     union_of_sorted_arrays(arr1, arr2)
+    print() # For a new line after the output
 except ValueError:
     print("Invalid input. Please enter integers only.")
