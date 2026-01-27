@@ -54,14 +54,15 @@ Comprehensive coverage of sorting algorithms with complexity analysis.
 
 ---
 
-## 🚧 Upcoming Topics
-
 ### 7. Hashing
+**Status:** ✅ Complete 
 Hash tables, hash maps, and collision handling techniques.
 
 📁 [Go to folder](./7.%20Hashing/)
 
 ---
+
+## 🚧 Upcoming Topics
 
 ### 8. String
 String manipulation, pattern matching, and string algorithms.
