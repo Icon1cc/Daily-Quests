@@ -55,10 +55,10 @@ Comprehensive coverage of sorting algorithms with complexity analysis.
 ---
 
 ### 7. Hashing
-**Status:** ✅ Complete 
+**Status:** ✅ Complete
 Hash tables, hash maps, and collision handling techniques.
 
-📁 [Go to folder](./7.%20Hashing/)
+📁 [Go to folder](./7.%20Hashing/) | 📖 [View detailed readme](./6.%20Hashing/readme.md)
 
 ---
 
