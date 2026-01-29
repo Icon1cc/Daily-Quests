@@ -63,6 +63,7 @@ Hash tables, hash maps, and collision handling techniques.
 ---
 
 ### 8. String
+**Status:** ✅ Complete
 String manipulation, pattern matching, and string algorithms.
 
 📁 [Go to folder](./8.%20Strings/) | 📖 [View detailed readme](./8.%20Strings/readme.md)
@@ -74,7 +75,7 @@ String manipulation, pattern matching, and string algorithms.
 ### 9. Linked List
 Singly, doubly, and circular linked lists with operations.
 
-📁 [Go to folder](./9.%20Linked%20List/)
+📁 [Go to folder](./9.%20Linked%20Lists/)
 
 ---
 
