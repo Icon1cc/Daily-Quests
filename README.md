@@ -62,14 +62,14 @@ Hash tables, hash maps, and collision handling techniques.
 
 ---
 
-## 🚧 Upcoming Topics
-
 ### 8. String
 String manipulation, pattern matching, and string algorithms.
 
-📁 [Go to folder](./8.%20String/)
+📁 [Go to folder](./8.%20Strings/) | 📖 [View detailed readme](./8.%20Strings/readme.md)
 
 ---
+
+## 🚧 Upcoming Topics
 
 ### 9. Linked List
 Singly, doubly, and circular linked lists with operations.
