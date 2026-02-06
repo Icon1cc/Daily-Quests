@@ -1,19 +1,19 @@
 # Searching Algorithms - Complete Reference Guide
 
 ## Table of Contents
-1. [Binary Search](#binary-search) - [Code: Binary_search.py](./1.%20Binary_search.py)
-2. [Recursive Binary Search](#recursive-binary-search) - [Code: Recursive_Binary_Search.py](./2.%20Recursive_Binary_Search.py)
-3. [Index of First Occurrence](#index-of-first-occurrence) - [Code: Index_of_first_occurence_in_a_sorted_array.py](./3.%20Index_of_first_occurence_in_a_sorted_array.py)
-4. [Index of Last Occurrence](#index-of-last-occurrence) - [Code: Index_of_last_occurence_in_a_sorted_array.py](./4.%20Index_of_last_occurence_in_a_sorted_array.py)
-5. [Count Occurrences](#count-occurrences) - [Code: Count_Occurences of a target value.py](./5.%20Count_Occurences%20of%20a%20target%20value.py)
-6. [Counting 1's in Binary Sorted Array](#counting-1s-in-binary-sorted-array) - [Code: Counting_1's_Occurences.py](./6.%20Counting_1's_Occurences.py)
-7. [Square Root using Binary Search](#square-root-using-binary-search) - [Code: Calculate square_root using binary_search.py](./7.%20Calculate%20square_root%20using%20binary_search.py)
+1. [Binary Search](#binary-search) - [Code: 01. Binary search.py](./01.%20Binary%20search.py)
+2. [Recursive Binary Search](#recursive-binary-search) - [Code: 02. Recursive Binary Search.py](./02.%20Recursive%20Binary%20Search.py)
+3. [Index of First Occurrence](#index-of-first-occurrence) - [Code: 03. Index of first occurence in a sorted array.py](./03.%20Index%20of%20first%20occurence%20in%20a%20sorted%20array.py)
+4. [Index of Last Occurrence](#index-of-last-occurrence) - [Code: 04. Index of last occurence in a sorted array.py](./04.%20Index%20of%20last%20occurence%20in%20a%20sorted%20array.py)
+5. [Count Occurrences](#count-occurrences) - [Code: 05. Count Occurrences of a target value.py](./05.%20Count%20Occurrences%20of%20a%20target%20value.py)
+6. [Counting 1's in Binary Sorted Array](#counting-1s-in-binary-sorted-array) - [Code: 06. Counting 1's Occurrences.py](./06.%20Counting%201's%20Occurrences.py)
+7. [Square Root using Binary Search](#square-root-using-binary-search) - [Code: 07. Calculate square root using binary search.py](./07.%20Calculate%20square%20root%20using%20binary%20search.py)
 8. [Comparison Summary](#comparison-summary)
 
 ---
 
 ## Binary Search
-**📁 Implementation:** [1. Binary_search.py](./1.%20Binary_search.py)
+**📁 Implementation:** [01. Binary search.py](./01.%20Binary%20search.py)
 
 ### Logic
 Binary Search is an efficient algorithm for finding a target value within a **sorted array**. It works by repeatedly dividing the search interval in half. If the target value is less than the middle element, search the left half; if greater, search the right half.
@@ -66,7 +66,7 @@ Binary Search is an efficient algorithm for finding a target value within a **so
 ---
 
 ## Recursive Binary Search
-**📁 Implementation:** [2. Recursive_Binary_Search.py](./2.%20Recursive_Binary_Search.py)
+**📁 Implementation:** [02. Recursive Binary Search.py](./02.%20Recursive%20Binary%20Search.py)
 
 ### Logic
 Same binary search algorithm but implemented using recursion instead of iteration. The function calls itself with updated bounds until the target is found or search space is exhausted.
@@ -106,7 +106,7 @@ Same binary search algorithm but implemented using recursion instead of iteratio
 ---
 
 ## Index of First Occurrence
-**📁 Implementation:** [3. Index_of_first_occurence_in_a_sorted_array.py](./3.%20Index_of_first_occurence_in_a_sorted_array.py)
+**📁 Implementation:** [03. Index of first occurence in a sorted array.py](./03.%20Index%20of%20first%20occurence%20in%20a%20sorted%20array.py)
 
 ### Problem
 Find the index of the **first occurrence** of a target element in a sorted array that may contain duplicates.
@@ -144,7 +144,7 @@ Modified binary search that continues searching in the left half even after find
 ---
 
 ## Index of Last Occurrence
-**📁 Implementation:** [4. Index_of_last_occurence_in_a_sorted_array.py](./4.%20Index_of_last_occurence_in_a_sorted_array.py)
+**📁 Implementation:** [04. Index of last occurence in a sorted array.py](./04.%20Index%20of%20last%20occurence%20in%20a%20sorted%20array.py)
 
 ### Problem
 Find the index of the **last occurrence** of a target element in a sorted array that may contain duplicates.
@@ -182,7 +182,7 @@ Modified binary search that continues searching in the right half even after fin
 ---
 
 ## Count Occurrences
-**📁 Implementation:** [5. Count_Occurences of a target value.py](./5.%20Count_Occurences%20of%20a%20target%20value.py)
+**📁 Implementation:** [05. Count Occurrences of a target value.py](./05.%20Count%20Occurrences%20of%20a%20target%20value.py)
 
 ### Problem
 Count the total number of times a target element appears in a sorted array.
@@ -227,7 +227,7 @@ Single pass modified binary search tracking count, but two-pass approach is clea
 ---
 
 ## Counting 1's in Binary Sorted Array
-**📁 Implementation:** [6. Counting_1's_Occurences.py](./6.%20Counting_1's_Occurences.py)
+**📁 Implementation:** [06. Counting 1's Occurrences.py](./06.%20Counting%201's%20Occurrences.py)
 
 ### Problem
 Count the number of 1's in a sorted binary array (containing only 0's and 1's).
@@ -273,7 +273,7 @@ count = n - first_index_of_1
 ---
 
 ## Square Root using Binary Search
-**📁 Implementation:** [7. Calculate square_root using binary_search.py](./7.%20Calculate%20square_root%20using%20binary_search.py)
+**📁 Implementation:** [07. Calculate square root using binary search.py](./07.%20Calculate%20square%20root%20using%20binary%20search.py)
 
 ### Problem
 Find the square root of a number (integer part) without using built-in sqrt function.
