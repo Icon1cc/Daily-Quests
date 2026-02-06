@@ -1,4 +1,3 @@
-````md
 # Lists Operations - Complete Reference Guide
 
 ## Table of Contents
