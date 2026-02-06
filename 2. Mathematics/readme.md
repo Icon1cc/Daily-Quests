@@ -1,36 +1,41 @@
 # Mathematics Problems - Complete Reference Guide
 
 ## Table of Contents
-1. [Sum of N Natural Numbers](#sum-of-n-natural-numbers) - [Code: 01_Sum_of_n_Natural_Numbers.py](./01_Sum_of_n_Natural_Numbers.py)
-2. [Count Digits](#count-digits) - [Code: 02_Count_Digits.py](./02_Count_Digits.py)
-3. [Palindrome Number](#palindrome-number) - [Code: 03_Palindrome_Number.py](./03_Palindrome_Number.py)
-4. [Factorial Number](#factorial-number) - [Code: 04_Factorial_Number.py](./04_Factorial_Number.py)
-5. [GCD or HCF](#gcd-or-hcf) - [Code: 05_GCD_or_HCF_of_two_numbers.py](./05_GCD_or_HCF_of_two_numbers.py)
-6. [LCM](#lcm) - [Code: 06_LCM_of_two_numbers.py](./06_LCM_of_two_numbers.py)
-7. [Check for Prime](#check-for-prime) - [Code: 07_Check_for_prime.py](./07_Check_for_prime.py)
-8. [Prime Factorization](#prime-factorization) - [Code: 08_Prime_Factorization.py](./08_Prime_Factorization.py)
-9. [All Divisors](#all-divisors) - [Code: 09_All_Divisors_of_a_Number.py](./09_All_Divisors_of_a_Number.py)
-10. [Sieve of Eratosthenes](#sieve-of-eratosthenes) - [Code: 10_Sieve_of_Eratosthenes.py](./10_Sieve_of_Eratosthenes.py)
-11. [Computing Power](#computing-power) - [Code: 11_Computing_Power.py](./11_Computing_Power.py)
-12. [Iterative Power](#iterative-power) - [Code: 12_Iterative_Power.py](./12_Iterative_Power.py)
-13. [Modular Multiplicative Inverse](#modular-multiplicative-inverse) - [Code: 13.Modular_Multiplicative_Inverse.py](./13.Modular_Multiplicative_Inverse.py)
+
+1. [Sum of N Natural Numbers](#sum-of-n-natural-numbers) - [Code: 01. Sum of n Natural Numbers.py](./01.%20Sum%20of%20n%20Natural%20Numbers.py)
+2. [Count Digits](#count-digits) - [Code: 02. Count Digits.py](./02.%20Count%20Digits.py)
+3. [Palindrome Number](#palindrome-number) - [Code: 03. Palindrome Number.py](./03.%20Palindrome%20Number.py)
+4. [Factorial Number](#factorial-number) - [Code: 04. Factorial Number.py](./04.%20Factorial%20Number.py)
+5. [GCD or HCF](#gcd-or-hcf) - [Code: 05. GCD or HCF of two numbers.py](./05.%20GCD%20or%20HCF%20of%20two%20numbers.py)
+6. [LCM](#lcm) - [Code: 06. LCM of two numbers.py](./06.%20LCM%20of%20two%20numbers.py)
+7. [Check for Prime](#check-for-prime) - [Code: 07. Check for prime.py](./07.%20Check%20for%20prime.py)
+8. [Prime Factorization](#prime-factorization) - [Code: 08. Prime Factorization.py](./08.%20Prime%20Factorization.py)
+9. [All Divisors](#all-divisors) - [Code: 09. All Divisors of a Number.py](./09.%20All%20Divisors%20of%20a%20Number.py)
+10. [Sieve of Eratosthenes](#sieve-of-eratosthenes) - [Code: 10. Sieve of Eratosthenes.py](./10.%20Sieve%20of%20Eratosthenes.py)
+11. [Computing Power](#computing-power) - [Code: 11. Computing Power.py](./11.%20Computing%20Power.py)
+12. [Iterative Power](#iterative-power) - [Code: 12. Iterative Power.py](./12.%20Iterative%20Power.py)
+13. [Modular Multiplicative Inverse](#modular-multiplicative-inverse) - [Code: 13. Modular Multiplicative Inverse.py](./13.%20Modular%20Multiplicative%20Inverse.py)
 
 ---
 
 ## Sum of N Natural Numbers
-**📁 Implementation:** [01_Sum_of_n_Natural_Numbers.py](./01_Sum_of_n_Natural_Numbers.py)
+
+**📁 Implementation:** [01. Sum of n Natural Numbers.py](./01.%20Sum%20of%20n%20Natural%20Numbers.py)
 
 ### Problem
+
 Calculate the sum of first N natural numbers: 1 + 2 + 3 + ... + N
 
 Example: N = 5 → 1 + 2 + 3 + 4 + 5 = 15
 
 ### Mathematical Formula
+
 ```
 Sum = N × (N + 1) / 2
 ```
 
 ### Approach 1: Direct Formula (Best)
+
 ```python
 def sum_natural(n):
     return n * (n + 1) // 2
@@ -39,6 +44,7 @@ def sum_natural(n):
 **Time**: O(1), **Space**: O(1)
 
 ### Approach 2: Iterative Loop
+
 ```python
 def sum_natural_loop(n):
     total = 0
@@ -50,6 +56,7 @@ def sum_natural_loop(n):
 **Time**: O(n), **Space**: O(1)
 
 ### Approach 3: Recursive
+
 ```python
 def sum_natural_recursive(n):
     if n == 0:
@@ -61,19 +68,22 @@ def sum_natural_recursive(n):
 
 ### Time Complexity
 
-| Approach | Best/Avg/Worst | Calculation |
-|----------|----------------|-------------|
-| Formula | O(1) | Direct arithmetic calculation |
-| Loop | O(n) | n iterations |
-| Recursive | O(n) | n recursive calls |
+| Approach  | Best/Avg/Worst | Calculation                   |
+| --------- | -------------- | ----------------------------- |
+| Formula   | O(1)           | Direct arithmetic calculation |
+| Loop      | O(n)           | n iterations                  |
+| Recursive | O(n)           | n recursive calls             |
 
 ### Space Complexity
-- **Formula**: O(1) - No extra space
-- **Loop**: O(1) - Only counter variable
-- **Recursive**: O(n) - Call stack depth
+
+* **Formula**: O(1) - No extra space
+* **Loop**: O(1) - Only counter variable
+* **Recursive**: O(n) - Call stack depth
 
 ### Proof of Formula
+
 Using arithmetic progression:
+
 ```
 Sum = 1 + 2 + 3 + ... + n
 Sum = n + (n-1) + (n-2) + ... + 1  (reverse)
@@ -83,22 +93,26 @@ Sum = n × (n+1) / 2
 ```
 
 ### When to Use
-- Quick calculation of series sum
-- Mathematical formulas (combinations, permutations)
-- Algorithm complexity analysis
-- **Always use formula approach** - it's most efficient
+
+* Quick calculation of series sum
+* Mathematical formulas (combinations, permutations)
+* Algorithm complexity analysis
+* **Always use formula approach** - it's most efficient
 
 ---
 
 ## Count Digits
-**📁 Implementation:** [02_Count_Digits.py](./02_Count_Digits.py)
+
+**📁 Implementation:** [02. Count Digits.py](./02.%20Count%20Digits.py)
 
 ### Problem
+
 Count the number of digits in a number.
 
 Example: 12345 → 5 digits, 100 → 3 digits
 
 ### Approach 1: Logarithm (Best for positive numbers)
+
 ```python
 import math
 def count_digits_log(n):
@@ -110,6 +124,7 @@ def count_digits_log(n):
 **Time**: O(1), **Space**: O(1)
 
 ### Approach 2: Convert to String
+
 ```python
 def count_digits_string(n):
     return len(str(abs(n)))
@@ -118,6 +133,7 @@ def count_digits_string(n):
 **Time**: O(log n), **Space**: O(log n)
 
 ### Approach 3: Iterative Division
+
 ```python
 def count_digits_iterative(n):
     if n == 0:
@@ -134,41 +150,47 @@ def count_digits_iterative(n):
 
 ### Time Complexity
 
-| Approach | Complexity | Calculation |
-|----------|------------|-------------|
-| Logarithm | O(1) | Single math operation |
-| String Conversion | O(log n) | Converting d digits to string |
-| Iterative | O(log n) | d iterations where d = number of digits |
+| Approach          | Complexity | Calculation                             |
+| ----------------- | ---------- | --------------------------------------- |
+| Logarithm         | O(1)       | Single math operation                   |
+| String Conversion | O(log n)   | Converting d digits to string           |
+| Iterative         | O(log n)   | d iterations where d = number of digits |
 
 **Why O(log n)?** Dividing by 10 repeatedly reduces n logarithmically (log₁₀ n gives number of digits).
 
 ### Space Complexity
-- **Logarithm**: O(1)
-- **String**: O(log n) - stores string
-- **Iterative**: O(1)
+
+* **Logarithm**: O(1)
+* **String**: O(log n) - stores string
+* **Iterative**: O(1)
 
 ### Edge Cases
-- **n = 0**: Has 1 digit by convention
-- **Negative numbers**: Count absolute value (ignore sign)
-- **Single digit**: Returns 1
+
+* **n = 0**: Has 1 digit by convention
+* **Negative numbers**: Count absolute value (ignore sign)
+* **Single digit**: Returns 1
 
 ### Applications
-- Input validation
-- Number formatting
-- Digit manipulation algorithms
-- Mathematical computations
+
+* Input validation
+* Number formatting
+* Digit manipulation algorithms
+* Mathematical computations
 
 ---
 
 ## Palindrome Number
-**📁 Implementation:** [03_Palindrome_Number.py](./03_Palindrome_Number.py)
+
+**📁 Implementation:** [03. Palindrome Number.py](./03.%20Palindrome%20Number.py)
 
 ### Problem
+
 Check if a number reads the same forwards and backwards.
 
 Example: 12321 → True, 12345 → False
 
 ### Approach 1: Reverse and Compare
+
 ```python
 def is_palindrome(n):
     if n < 0:
@@ -182,6 +204,7 @@ def is_palindrome(n):
 ```
 
 ### Approach 2: String Comparison
+
 ```python
 def is_palindrome_string(n):
     s = str(n)
@@ -189,6 +212,7 @@ def is_palindrome_string(n):
 ```
 
 ### Approach 3: Compare First and Last Digits
+
 ```python
 def is_palindrome_math(n):
     if n < 0:
@@ -214,38 +238,44 @@ def is_palindrome_math(n):
 
 ### Time Complexity
 
-| Approach | Complexity | Calculation |
-|----------|------------|-------------|
-| Reverse Number | O(log n) | d iterations for d digits |
-| String | O(log n) | Create string + comparison |
-| Math | O(log n) | Check d/2 digit pairs |
+| Approach       | Complexity | Calculation                |
+| -------------- | ---------- | -------------------------- |
+| Reverse Number | O(log n)   | d iterations for d digits  |
+| String         | O(log n)   | Create string + comparison |
+| Math           | O(log n)   | Check d/2 digit pairs      |
 
 ### Space Complexity
-- **Reverse Number**: O(1) - Only variables
-- **String**: O(log n) - String storage
-- **Math**: O(1) - Only variables
+
+* **Reverse Number**: O(1) - Only variables
+* **String**: O(log n) - String storage
+* **Math**: O(1) - Only variables
 
 ### Edge Cases
-- Negative numbers: Not palindromes (due to '-' sign)
-- Single digit: Always palindrome
-- Numbers with trailing zeros: 100 → reversed is 1, not palindrome
+
+* Negative numbers: Not palindromes (due to '-' sign)
+* Single digit: Always palindrome
+* Numbers with trailing zeros: 100 → reversed is 1, not palindrome
 
 ### When to Use
-- Number validation
-- Pattern recognition problems
-- Mathematical puzzles
+
+* Number validation
+* Pattern recognition problems
+* Mathematical puzzles
 
 ---
 
 ## Factorial Number
-**📁 Implementation:** [04_Factorial_Number.py](./04_Factorial_Number.py)
+
+**📁 Implementation:** [04. Factorial Number.py](./04.%20Factorial%20Number.py)
 
 ### Problem
+
 Calculate N! = N × (N-1) × (N-2) × ... × 1
 
 Example: 5! = 5 × 4 × 3 × 2 × 1 = 120
 
 ### Approach 1: Iterative (Best)
+
 ```python
 def factorial(n):
     result = 1
@@ -257,6 +287,7 @@ def factorial(n):
 **Time**: O(n), **Space**: O(1)
 
 ### Approach 2: Recursive
+
 ```python
 def factorial_recursive(n):
     if n <= 1:
@@ -268,32 +299,37 @@ def factorial_recursive(n):
 
 ### Time Complexity
 
-| Approach | Complexity | Calculation |
-|----------|------------|-------------|
-| Iterative | O(n) | n-1 multiplications |
-| Recursive | O(n) | n recursive calls |
+| Approach  | Complexity | Calculation         |
+| --------- | ---------- | ------------------- |
+| Iterative | O(n)       | n-1 multiplications |
+| Recursive | O(n)       | n recursive calls   |
 
 ### Space Complexity
-- **Iterative**: O(1) - Only result variable
-- **Recursive**: O(n) - Recursion stack depth
+
+* **Iterative**: O(1) - Only result variable
+* **Recursive**: O(n) - Recursion stack depth
 
 ### Large Factorials
-- Python handles arbitrary precision integers
-- Factorial grows very quickly: 20! = 2,432,902,008,176,640,000
-- For modular arithmetic: `(a * b) % m = ((a % m) * (b % m)) % m`
+
+* Python handles arbitrary precision integers
+* Factorial grows very quickly: 20! = 2,432,902,008,176,640,000
+* For modular arithmetic: `(a * b) % m = ((a % m) * (b % m)) % m`
 
 ### Applications
-- Permutations: P(n,r) = n! / (n-r)!
-- Combinations: C(n,r) = n! / (r! × (n-r)!)
-- Probability calculations
-- Mathematical analysis
+
+* Permutations: P(n,r) = n! / (n-r)!
+* Combinations: C(n,r) = n! / (r! × (n-r)!)
+* Probability calculations
+* Mathematical analysis
 
 ---
 
 ## GCD or HCF
-**📁 Implementation:** [05_GCD_or_HCF_of_two_numbers.py](./05_GCD_or_HCF_of_two_numbers.py)
+
+**📁 Implementation:** [05. GCD or HCF of two numbers.py](./05.%20GCD%20or%20HCF%20of%20two%20numbers.py)
 
 ### Problem
+
 Find the Greatest Common Divisor (GCD) or Highest Common Factor (HCF) of two numbers.
 
 **Definition**: Largest positive integer that divides both numbers without remainder.
@@ -301,6 +337,7 @@ Find the Greatest Common Divisor (GCD) or Highest Common Factor (HCF) of two num
 Example: GCD(12, 18) = 6
 
 ### Approach 1: Euclidean Algorithm (Best)
+
 Based on: GCD(a, b) = GCD(b, a % b)
 
 ```python
@@ -313,6 +350,7 @@ def gcd(a, b):
 **Time**: O(log min(a,b)), **Space**: O(1)
 
 ### Approach 2: Recursive Euclidean
+
 ```python
 def gcd_recursive(a, b):
     if b == 0:
@@ -323,6 +361,7 @@ def gcd_recursive(a, b):
 **Time**: O(log min(a,b)), **Space**: O(log min(a,b))
 
 ### Approach 3: Naive (Finding all divisors)
+
 ```python
 def gcd_naive(a, b):
     result = min(a, b)
@@ -336,22 +375,26 @@ def gcd_naive(a, b):
 
 ### Time Complexity
 
-| Approach | Complexity | Calculation |
-|----------|------------|-------------|
+| Approach  | Complexity      | Calculation                              |
+| --------- | --------------- | ---------------------------------------- |
 | Euclidean | O(log min(a,b)) | Number of divisions until remainder is 0 |
-| Recursive | O(log min(a,b)) | Same as iterative but with call stack |
-| Naive | O(min(a,b)) | Check every number from min down to 1 |
+| Recursive | O(log min(a,b)) | Same as iterative but with call stack    |
+| Naive     | O(min(a,b))     | Check every number from min down to 1    |
 
 ### Why Euclidean is O(log n)?
+
 Each iteration at least halves one of the numbers (proven by Fibonacci numbers being worst case).
 
 ### Space Complexity
-- **Euclidean**: O(1)
-- **Recursive**: O(log min(a,b))
-- **Naive**: O(1)
+
+* **Euclidean**: O(1)
+* **Recursive**: O(log min(a,b))
+* **Naive**: O(1)
 
 ### How Euclidean Algorithm Works
+
 Example: GCD(48, 18)
+
 ```
 GCD(48, 18)
   → 48 % 18 = 12
@@ -364,22 +407,26 @@ GCD(6, 0)
 ```
 
 ### Properties
-- GCD(a, 0) = a
-- GCD(a, b) = GCD(b, a)
-- GCD(a, b) = GCD(a-b, b) when a > b
+
+* GCD(a, 0) = a
+* GCD(a, b) = GCD(b, a)
+* GCD(a, b) = GCD(a-b, b) when a > b
 
 ### Applications
-- Simplifying fractions
-- Finding LCM
-- Cryptography (RSA algorithm)
-- Number theory problems
+
+* Simplifying fractions
+* Finding LCM
+* Cryptography (RSA algorithm)
+* Number theory problems
 
 ---
 
 ## LCM
-**📁 Implementation:** [06_LCM_of_two_numbers.py](./06_LCM_of_two_numbers.py)
+
+**📁 Implementation:** [06. LCM of two numbers.py](./06.%20LCM%20of%20two%20numbers.py)
 
 ### Problem
+
 Find the Least Common Multiple (LCM) of two numbers.
 
 **Definition**: Smallest positive integer divisible by both numbers.
@@ -387,6 +434,7 @@ Find the Least Common Multiple (LCM) of two numbers.
 Example: LCM(4, 6) = 12
 
 ### Key Relationship
+
 ```
 LCM(a, b) × GCD(a, b) = a × b
 
@@ -395,6 +443,7 @@ LCM(a, b) = (a × b) / GCD(a, b)
 ```
 
 ### Approach 1: Using GCD Formula (Best)
+
 ```python
 def lcm(a, b):
     return (a * b) // gcd(a, b)
@@ -403,6 +452,7 @@ def lcm(a, b):
 **Time**: O(log min(a,b)), **Space**: O(1)
 
 ### Approach 2: Naive (Multiples)
+
 ```python
 def lcm_naive(a, b):
     max_num = max(a, b)
@@ -416,23 +466,27 @@ def lcm_naive(a, b):
 
 ### Time Complexity
 
-| Approach | Complexity | Calculation |
-|----------|------------|-------------|
+| Approach    | Complexity      | Calculation                  |
+| ----------- | --------------- | ---------------------------- |
 | GCD Formula | O(log min(a,b)) | Dominated by GCD calculation |
-| Naive | O(a×b/GCD(a,b)) | Could be very large |
+| Naive       | O(a×b/GCD(a,b)) | Could be very large          |
 
 ### Space Complexity
-- **GCD Formula**: O(1)
-- **Naive**: O(1)
+
+* **GCD Formula**: O(1)
+* **Naive**: O(1)
 
 ### Why the Formula Works
+
 **Mathematical Proof:**
-- Every common multiple is a multiple of LCM
-- a × b contains all prime factors of both numbers (with maximum powers)
-- GCD contains common prime factors
-- Dividing removes the overcounting
+
+* Every common multiple is a multiple of LCM
+* a × b contains all prime factors of both numbers (with maximum powers)
+* GCD contains common prime factors
+* Dividing removes the overcounting
 
 Example: LCM(12, 18)
+
 ```
 12 = 2² × 3
 18 = 2 × 3²
@@ -442,13 +496,16 @@ LCM = 2² × 3² = 36 ✓
 ```
 
 ### Avoiding Overflow
+
 For large numbers, compute as:
+
 ```python
 def lcm_safe(a, b):
     return a // gcd(a, b) * b  # Divide first to prevent overflow
 ```
 
 ### Extension: LCM of Multiple Numbers
+
 ```python
 from functools import reduce
 
@@ -457,22 +514,26 @@ def lcm_multiple(numbers):
 ```
 
 ### Applications
-- Time synchronization problems
-- Repeating patterns
-- Scheduling
-- Music theory (rhythm patterns)
+
+* Time synchronization problems
+* Repeating patterns
+* Scheduling
+* Music theory (rhythm patterns)
 
 ---
 
 ## Check for Prime
-**📁 Implementation:** [07_Check_for_prime.py](./07_Check_for_prime.py)
+
+**📁 Implementation:** [07. Check for prime.py](./07.%20Check%20for%20prime.py)
 
 ### Problem
+
 Determine if a number is prime (only divisible by 1 and itself).
 
 Example: 7 → Prime, 9 → Not Prime (divisible by 3)
 
 ### Approach 1: Trial Division up to √n (Best)
+
 ```python
 def is_prime(n):
     if n <= 1:
@@ -493,15 +554,18 @@ def is_prime(n):
 **Time**: O(√n), **Space**: O(1)
 
 ### Why Check Only Up to √n?
+
 If n = a × b and a ≤ b, then a ≤ √n.
 So if n has a divisor, at least one must be ≤ √n.
 
 Example: Is 37 prime?
-- Check up to √37 ≈ 6.08
-- Test: 2, 3, 5 (no need to test 4, 6 as they're even)
-- None divide 37 → Prime!
+
+* Check up to √37 ≈ 6.08
+* Test: 2, 3, 5 (no need to test 4, 6 as they're even)
+* None divide 37 → Prime!
 
 ### Approach 2: Naive (Check All)
+
 ```python
 def is_prime_naive(n):
     if n <= 1:
@@ -515,51 +579,59 @@ def is_prime_naive(n):
 **Time**: O(n), **Space**: O(1)
 
 ### Optimized Approach Explanation
+
 1. Handle edge cases: n ≤ 1 (not prime), n = 2,3 (prime)
 2. Check divisibility by 2 and 3
 3. All primes > 3 are of form 6k±1
 4. Check only numbers of form 6k±1 up to √n
 
-**Why 6k±1?** 
-- 6k: divisible by 6
-- 6k+2, 6k+4: divisible by 2
-- 6k+3: divisible by 3
-- Only 6k+1 and 6k+5 (= 6(k+1)-1) can be prime
+**Why 6k±1?**
+
+* 6k: divisible by 6
+* 6k+2, 6k+4: divisible by 2
+* 6k+3: divisible by 3
+* Only 6k+1 and 6k+5 (= 6(k+1)-1) can be prime
 
 ### Time Complexity
 
-| Approach | Complexity | Calculation |
-|----------|------------|-------------|
-| Naive | O(n) | Check all numbers from 2 to n-1 |
-| √n Check | O(√n) | Check divisors up to √n |
-| 6k±1 Optimization | O(√n/3) | Check only 1/3 of candidates |
+| Approach          | Complexity | Calculation                     |
+| ----------------- | ---------- | ------------------------------- |
+| Naive             | O(n)       | Check all numbers from 2 to n-1 |
+| √n Check          | O(√n)      | Check divisors up to √n         |
+| 6k±1 Optimization | O(√n/3)    | Check only 1/3 of candidates    |
 
 ### Space Complexity
-- All approaches: O(1)
+
+* All approaches: O(1)
 
 ### Special Cases
-- n ≤ 1: Not prime by definition
-- n = 2: Only even prime
-- n = 3: Prime
-- Even numbers > 2: Not prime
+
+* n ≤ 1: Not prime by definition
+* n = 2: Only even prime
+* n = 3: Prime
+* Even numbers > 2: Not prime
 
 ### Applications
-- Cryptography (RSA, key generation)
-- Hash table sizing
-- Random number generation
-- Number theory
+
+* Cryptography (RSA, key generation)
+* Hash table sizing
+* Random number generation
+* Number theory
 
 ---
 
 ## Prime Factorization
-**📁 Implementation:** [08_Prime_Factorization.py](./08_Prime_Factorization.py)
+
+**📁 Implementation:** [08. Prime Factorization.py](./08.%20Prime%20Factorization.py)
 
 ### Problem
+
 Find all prime factors of a number with their powers.
 
 Example: 60 = 2² × 3 × 5
 
 ### Approach 1: Division by Primes (Efficient)
+
 ```python
 def prime_factorization(n):
     factors = []
@@ -585,7 +657,9 @@ def prime_factorization(n):
 ```
 
 ### How It Works
+
 For n = 60:
+
 ```
 60 ÷ 2 = 30  → factor: 2
 30 ÷ 2 = 15  → factor: 2
@@ -596,24 +670,28 @@ Result: [2, 2, 3, 5] = 2² × 3 × 5
 
 ### Time Complexity
 
-| Approach | Complexity | Calculation |
-|----------|------------|-------------|
-| Trial Division | O(√n) | Check divisors up to √n, each division reduces n |
+| Approach       | Complexity | Calculation                                      |
+| -------------- | ---------- | ------------------------------------------------ |
+| Trial Division | O(√n)      | Check divisors up to √n, each division reduces n |
 
 **Why O(√n)?**
-- We only check up to √n
-- Each successful division reduces n
-- Worst case: n is prime (check all up to √n)
+
+* We only check up to √n
+* Each successful division reduces n
+* Worst case: n is prime (check all up to √n)
 
 ### Space Complexity
-- O(log n) - Maximum number of prime factors (when n = 2^k)
+
+* O(log n) - Maximum number of prime factors (when n = 2^k)
 
 ### Optimizations
+
 1. **Check 2 separately**, then only odd numbers
 2. **Stop at √n** for remaining checks
 3. **Early termination** when n becomes 1
 
 ### With Powers (Compressed Format)
+
 ```python
 def prime_factorization_with_powers(n):
     factors = {}
@@ -640,23 +718,27 @@ def prime_factorization_with_powers(n):
 Example: 60 → {2: 2, 3: 1, 5: 1}
 
 ### Applications
-- Finding divisors of a number
-- GCD/LCM calculations
-- Cryptography
-- Number theory problems
-- Simplifying fractions
+
+* Finding divisors of a number
+* GCD/LCM calculations
+* Cryptography
+* Number theory problems
+* Simplifying fractions
 
 ---
 
 ## All Divisors
-**📁 Implementation:** [09_All_Divisors_of_a_Number.py](./09_All_Divisors_of_a_Number.py)
+
+**📁 Implementation:** [09. All Divisors of a Number.py](./09.%20All%20Divisors%20of%20a%20Number.py)
 
 ### Problem
+
 Find all positive divisors of a number.
 
 Example: 36 → [1, 2, 3, 4, 6, 9, 12, 18, 36]
 
 ### Approach 1: Check Up to √n (Efficient)
+
 ```python
 def all_divisors(n):
     divisors = []
@@ -671,7 +753,9 @@ def all_divisors(n):
 ```
 
 ### How It Works
+
 For n = 36:
+
 ```
 i = 1: 36 % 1 = 0 → divisors: 1, 36
 i = 2: 36 % 2 = 0 → divisors: 2, 18
@@ -684,6 +768,7 @@ Result: [1, 2, 3, 4, 6, 9, 12, 18, 36]
 ```
 
 ### Approach 2: Naive
+
 ```python
 def all_divisors_naive(n):
     divisors = []
@@ -695,55 +780,67 @@ def all_divisors_naive(n):
 
 ### Time Complexity
 
-| Approach | Complexity | Calculation |
-|----------|------------|-------------|
-| Naive | O(n) | Check every number from 1 to n |
-| Efficient | O(√n) | Check only up to √n, find pairs |
+| Approach  | Complexity | Calculation                     |
+| --------- | ---------- | ------------------------------- |
+| Naive     | O(n)       | Check every number from 1 to n  |
+| Efficient | O(√n)      | Check only up to √n, find pairs |
 
 ### Space Complexity
-- O(d) where d is the number of divisors
-- For most numbers, d = O(log n) on average
-- Worst case: d = O(√n) for highly composite numbers
+
+* O(d) where d is the number of divisors
+* For most numbers, d = O(log n) on average
+* Worst case: d = O(√n) for highly composite numbers
 
 ### Why Check Only √n?
+
 If i divides n, then n/i also divides n.
-- If i < √n, then n/i > √n (larger pair)
-- If i = √n, then i = n/i (perfect square case)
+
+* If i < √n, then n/i > √n (larger pair)
+* If i = √n, then i = n/i (perfect square case)
 
 ### Count of Divisors Formula
+
 If n = p₁^a₁ × p₂^a₂ × ... × pₖ^aₖ (prime factorization):
+
 ```
 Number of divisors = (a₁ + 1) × (a₂ + 1) × ... × (aₖ + 1)
 ```
 
 Example: 36 = 2² × 3²
-- Count = (2+1) × (2+1) = 3 × 3 = 9 divisors ✓
+
+* Count = (2+1) × (2+1) = 3 × 3 = 9 divisors ✓
 
 ### Sum of Divisors Formula
+
 ```
 Sum = [(p₁^(a₁+1) - 1)/(p₁ - 1)] × [(p₂^(a₂+1) - 1)/(p₂ - 1)] × ...
 ```
 
 ### Applications
-- Perfect numbers (sum of divisors = 2n)
-- Abundant/deficient numbers
-- Number theory
-- Algorithm optimizations
+
+* Perfect numbers (sum of divisors = 2n)
+* Abundant/deficient numbers
+* Number theory
+* Algorithm optimizations
 
 ---
 
 ## Sieve of Eratosthenes
-**📁 Implementation:** [10_Sieve_of_Eratosthenes.py](./10_Sieve_of_Eratosthenes.py)
+
+**📁 Implementation:** [10. Sieve of Eratosthenes.py](./10.%20Sieve%20of%20Eratosthenes.py)
 
 ### Problem
+
 Find all prime numbers up to a given number N.
 
 Example: N = 20 → [2, 3, 5, 7, 11, 13, 17, 19]
 
 ### Algorithm
+
 Ancient algorithm for finding all primes up to N by iteratively marking multiples of each prime.
 
 ### How It Works
+
 ```python
 def sieve_of_eratosthenes(n):
     if n < 2:
@@ -767,6 +864,7 @@ def sieve_of_eratosthenes(n):
 ```
 
 ### Visual Example (N = 20)
+
 ```
 Initial: [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
@@ -782,63 +880,73 @@ Result: [2,3,5,7,11,13,17,19]
 ```
 
 ### Why Start at p²?
+
 All composite numbers less than p² have already been marked by smaller primes.
 
 Example: For p=5, multiples 10,15,20 already marked by 2 or 3. Start at 25.
 
 ### Time Complexity
 
-| Operation | Complexity | Calculation |
-|-----------|------------|-------------|
-| Sieve | O(n log log n) | Sum of n/2 + n/3 + n/5 + ... (for each prime) |
+| Operation | Complexity     | Calculation                                   |
+| --------- | -------------- | --------------------------------------------- |
+| Sieve     | O(n log log n) | Sum of n/2 + n/3 + n/5 + ... (for each prime) |
 
 **Why O(n log log n)?**
-- Mark multiples of each prime p: O(n/p) operations
-- Sum over all primes: n×(1/2 + 1/3 + 1/5 + 1/7 + ...) ≈ n log log n
+
+* Mark multiples of each prime p: O(n/p) operations
+* Sum over all primes: n×(1/2 + 1/3 + 1/5 + 1/7 + ...) ≈ n log log n
 
 ### Space Complexity
-- O(n) - Boolean array of size n+1
+
+* O(n) - Boolean array of size n+1
 
 ### Optimizations
 
 #### 1. Only Odd Numbers
+
 ```python
 # Skip even numbers except 2
 # Use half the space
 ```
 
 #### 2. Segmented Sieve
+
 For very large n, process in segments to fit in cache.
 
 ### Comparison with Other Methods
 
-| Method | Single Prime Check | All Primes up to N |
-|--------|-------------------|-------------------|
-| Trial Division | O(√n) | O(n√n) |
-| Sieve of Eratosthenes | N/A | O(n log log n) |
+| Method                | Single Prime Check | All Primes up to N |
+| --------------------- | ------------------ | ------------------ |
+| Trial Division        | O(√n)              | O(n√n)             |
+| Sieve of Eratosthenes | N/A                | O(n log log n)     |
 
 ### When to Use
-- Finding all primes in a range (use sieve)
-- Checking if single number is prime (use trial division)
-- Preprocessing for multiple queries (use sieve)
+
+* Finding all primes in a range (use sieve)
+* Checking if single number is prime (use trial division)
+* Preprocessing for multiple queries (use sieve)
 
 ### Applications
-- Prime number generation
-- Cryptography (finding large primes)
-- Number theory research
-- Competitive programming
+
+* Prime number generation
+* Cryptography (finding large primes)
+* Number theory research
+* Competitive programming
 
 ---
 
 ## Computing Power
-**📁 Implementation:** [11_Computing_Power.py](./11_Computing_Power.py)
+
+**📁 Implementation:** [11. Computing Power.py](./11.%20Computing%20Power.py)
 
 ### Problem
+
 Compute x^n (x raised to power n) efficiently.
 
 Example: 2^10 = 1024
 
 ### Approach 1: Exponentiation by Squaring (Best)
+
 **Binary Exponentiation** - Most efficient recursive method
 
 ```python
@@ -858,9 +966,11 @@ def power(x, n):
 **Time**: O(log n), **Space**: O(log n) - recursion stack
 
 ### How It Works
+
 Key insight: x^n = (x^(n/2))² when n is even
 
 Example: 2^10
+
 ```
 2^10 = (2^5)²
 2^5 = 2 × (2^2)²
@@ -876,6 +986,7 @@ Unwinding:
 ```
 
 ### Approach 2: Naive Loop
+
 ```python
 def power_naive(x, n):
     result = 1
@@ -888,43 +999,50 @@ def power_naive(x, n):
 
 ### Time Complexity
 
-| Approach | Complexity | Calculation |
-|----------|------------|-------------|
-| Naive Loop | O(n) | Multiply x, n times |
-| Binary Exp (Recursive) | O(log n) | Halve n each time |
-| Binary Exp (Iterative) | O(log n) | Same logic, no stack |
+| Approach               | Complexity | Calculation          |
+| ---------------------- | ---------- | -------------------- |
+| Naive Loop             | O(n)       | Multiply x, n times  |
+| Binary Exp (Recursive) | O(log n)   | Halve n each time    |
+| Binary Exp (Iterative) | O(log n)   | Same logic, no stack |
 
 **Why O(log n)?**
 We divide n by 2 in each recursive call → log₂(n) calls.
 
 ### Space Complexity
-- **Recursive**: O(log n) - Call stack depth
-- **Iterative**: O(1) - No recursion
+
+* **Recursive**: O(log n) - Call stack depth
+* **Iterative**: O(1) - No recursion
 
 ### Binary Representation Method
+
 Power can be computed using binary representation of exponent:
 
 Example: 2^13
+
 ```
 13 in binary = 1101 = 2³ + 2² + 2⁰
 2^13 = 2^8 × 2^4 × 2^1 = 256 × 16 × 2 = 8192
 ```
 
 ### Applications
-- Fast modular exponentiation (cryptography)
-- Large number computations
-- Scientific calculations
-- Graphics transformations (matrix powers)
+
+* Fast modular exponentiation (cryptography)
+* Large number computations
+* Scientific calculations
+* Graphics transformations (matrix powers)
 
 ---
 
 ## Iterative Power
-**📁 Implementation:** [12_Iterative_Power.py](./12_Iterative_Power.py)
+
+**📁 Implementation:** [12. Iterative Power.py](./12.%20Iterative%20Power.py)
 
 ### Problem
+
 Compute x^n using iteration instead of recursion (avoids stack overflow for large n).
 
 ### Approach: Binary Exponentiation (Iterative)
+
 ```python
 def power_iterative(x, n):
     if n == 0:
@@ -946,6 +1064,7 @@ def power_iterative(x, n):
 ```
 
 ### How It Works (Bit by Bit)
+
 Example: 3^13 where 13 = 1101₂
 
 ```
@@ -975,42 +1094,47 @@ Iteration 4: n = 1 (1₂), bit = 1
 
 ### Time Complexity
 
-| Case | Complexity | Calculation |
-|------|------------|-------------|
-| Best Case | O(1) | When n = 0 or 1 |
-| Average Case | O(log n) | Process each bit of n |
-| Worst Case | O(log n) | Process all log₂(n) bits |
+| Case         | Complexity | Calculation              |
+| ------------ | ---------- | ------------------------ |
+| Best Case    | O(1)       | When n = 0 or 1          |
+| Average Case | O(log n)   | Process each bit of n    |
+| Worst Case   | O(log n)   | Process all log₂(n) bits |
 
 ### Space Complexity
-- **Auxiliary Space**: O(1) - Only uses variables, no recursion
+
+* **Auxiliary Space**: O(1) - Only uses variables, no recursion
 
 ### Comparison: Recursive vs Iterative
 
-| Aspect | Recursive | Iterative |
-|--------|-----------|-----------|
-| Time | O(log n) | O(log n) |
-| Space | O(log n) | O(1) |
-| Stack Overflow Risk | Yes (deep recursion) | No |
-| Readability | More intuitive | Slightly complex |
-| Production Use | Good for small n | Better for large n |
+| Aspect              | Recursive            | Iterative          |
+| ------------------- | -------------------- | ------------------ |
+| Time                | O(log n)             | O(log n)           |
+| Space               | O(log n)             | O(1)               |
+| Stack Overflow Risk | Yes (deep recursion) | No                 |
+| Readability         | More intuitive       | Slightly complex   |
+| Production Use      | Good for small n     | Better for large n |
 
 ### When to Use
-- Large exponents (avoid stack overflow)
-- Production systems (better space efficiency)
-- Embedded systems (limited stack)
-- When O(1) space is critical
+
+* Large exponents (avoid stack overflow)
+* Production systems (better space efficiency)
+* Embedded systems (limited stack)
+* When O(1) space is critical
 
 ### Applications
-- Modular exponentiation in cryptography
-- Fast Fibonacci (matrix exponentiation)
-- Computing large powers efficiently
+
+* Modular exponentiation in cryptography
+* Fast Fibonacci (matrix exponentiation)
+* Computing large powers efficiently
 
 ---
 
 ## Modular Multiplicative Inverse
-**📁 Implementation:** [13.Modular_Multiplicative_Inverse.py](./13.Modular_Multiplicative_Inverse.py)
+
+**📁 Implementation:** [13. Modular Multiplicative Inverse.py](./13.%20Modular%20Multiplicative%20Inverse.py)
 
 ### Problem
+
 Find the modular multiplicative inverse of a number 'a' under modulo 'm'.
 
 **Definition**: Find x such that (a × x) % m = 1
@@ -1018,9 +1142,11 @@ Find the modular multiplicative inverse of a number 'a' under modulo 'm'.
 Example: Inverse of 3 under mod 11 is 4 because (3 × 4) % 11 = 12 % 11 = 1
 
 ### Prerequisites
+
 Modular inverse exists **only if** GCD(a, m) = 1 (a and m are coprime).
 
 ### Approach 1: Extended Euclidean Algorithm (Best)
+
 ```python
 def extended_gcd(a, b):
     if b == 0:
@@ -1044,12 +1170,15 @@ def mod_inverse(a, m):
 **Time**: O(log min(a,m)), **Space**: O(log min(a,m))
 
 ### How Extended Euclidean Works
+
 Extended Euclidean finds integers x and y such that:
+
 ```
 a × x + m × y = GCD(a, m)
 ```
 
 If GCD(a, m) = 1:
+
 ```
 a × x + m × y = 1
 a × x = 1 - m × y
@@ -1058,6 +1187,7 @@ Therefore, x is the modular inverse of a
 ```
 
 ### Example: Find inverse of 3 under mod 11
+
 ```
 extended_gcd(3, 11):
   gcd(11, 3)
@@ -1075,7 +1205,9 @@ Verification: (3 × 4) % 11 = 12 % 11 = 1 ✓
 ```
 
 ### Approach 2: Fermat's Little Theorem (When m is prime)
+
 If m is prime:
+
 ```
 a^(m-1) ≡ 1 (mod m)
 a × a^(m-2) ≡ 1 (mod m)
@@ -1093,6 +1225,7 @@ def mod_inverse_fermat(a, m):
 **Time**: O(log m), **Space**: O(1) with iterative power
 
 ### Approach 3: Naive (Brute Force)
+
 ```python
 def mod_inverse_naive(a, m):
     for x in range(1, m):
@@ -1105,33 +1238,38 @@ def mod_inverse_naive(a, m):
 
 ### Time Complexity Comparison
 
-| Approach | Complexity | Notes |
-|----------|------------|-------|
+| Approach           | Complexity      | Notes                      |
+| ------------------ | --------------- | -------------------------- |
 | Extended Euclidean | O(log min(a,m)) | Works for any coprime a, m |
-| Fermat's Theorem | O(log m) | Only when m is prime |
-| Naive | O(m) | Too slow for large m |
+| Fermat's Theorem   | O(log m)        | Only when m is prime       |
+| Naive              | O(m)            | Too slow for large m       |
 
 ### Space Complexity
-- **Extended Euclidean**: O(log min(a,m)) - recursion depth
-- **Fermat's Theorem**: O(1) with iterative power
-- **Naive**: O(1)
+
+* **Extended Euclidean**: O(log min(a,m)) - recursion depth
+* **Fermat's Theorem**: O(1) with iterative power
+* **Naive**: O(1)
 
 ### Why It Matters
+
 Modular inverse is crucial for:
+
 1. **Division in modular arithmetic**: (a/b) mod m = (a × b⁻¹) mod m
 2. **Cryptography**: RSA encryption/decryption
 3. **Solving linear congruences**: ax ≡ b (mod m)
 4. **Computer algebra systems**
 
 ### Properties
-- Inverse of (a mod m) = inverse of a (mod m)
-- If a has inverse x: (a × x) % m = 1 and (x × a) % m = 1
-- Inverse of 1 is always 1
-- If m is prime, all numbers 1 to m-1 have inverses
+
+* Inverse of (a mod m) = inverse of a (mod m)
+* If a has inverse x: (a × x) % m = 1 and (x × a) % m = 1
+* Inverse of 1 is always 1
+* If m is prime, all numbers 1 to m-1 have inverses
 
 ### Example Applications
 
 #### Modular Division
+
 ```python
 # Compute (a / b) mod m
 def mod_divide(a, b, m):
@@ -1142,6 +1280,7 @@ def mod_divide(a, b, m):
 ```
 
 #### Solving Linear Congruence
+
 ```python
 # Solve: ax ≡ b (mod m)
 def solve_congruence(a, b, m):
@@ -1152,9 +1291,10 @@ def solve_congruence(a, b, m):
 ```
 
 ### When to Use Each Method
-- **Extended Euclidean**: General case, works for any coprime numbers
-- **Fermat's Theorem**: When modulus is prime and you have fast modular exponentiation
-- **Naive**: Only for very small m (< 1000) or educational purposes
+
+* **Extended Euclidean**: General case, works for any coprime numbers
+* **Fermat's Theorem**: When modulus is prime and you have fast modular exponentiation
+* **Naive**: Only for very small m (< 1000) or educational purposes
 
 ---
 
@@ -1162,81 +1302,93 @@ def solve_congruence(a, b, m):
 
 ### Time Complexity Table
 
-| Problem | Best Approach | Time | Space | Notes |
-|---------|---------------|------|-------|-------|
-| Sum of N Numbers | Formula | O(1) | O(1) | Always use formula |
-| Count Digits | Logarithm | O(1) | O(1) | Or iterative O(log n) |
-| Palindrome Number | Reverse | O(log n) | O(1) | Check digit by digit |
-| Factorial | Iterative | O(n) | O(1) | Avoid recursion |
-| GCD | Euclidean | O(log min(a,b)) | O(1) | Very efficient |
-| LCM | GCD Formula | O(log min(a,b)) | O(1) | Use: a×b/GCD(a,b) |
-| Prime Check | √n with 6k±1 | O(√n) | O(1) | Optimal for single check |
-| Prime Factorization | Trial Division | O(√n) | O(log n) | Check up to √n |
-| All Divisors | Check up to √n | O(√n) | O(d) | Find pairs |
-| Sieve of Eratosthenes | Sieve | O(n log log n) | O(n) | Best for multiple primes |
-| Power | Binary Exponentiation | O(log n) | O(1) iterative | Much faster than O(n) |
-| Modular Inverse | Extended Euclidean | O(log m) | O(log m) | Or Fermat if m prime |
+| Problem               | Best Approach         | Time            | Space          | Notes                    |
+| --------------------- | --------------------- | --------------- | -------------- | ------------------------ |
+| Sum of N Numbers      | Formula               | O(1)            | O(1)           | Always use formula       |
+| Count Digits          | Logarithm             | O(1)            | O(1)           | Or iterative O(log n)    |
+| Palindrome Number     | Reverse               | O(log n)        | O(1)           | Check digit by digit     |
+| Factorial             | Iterative             | O(n)            | O(1)           | Avoid recursion          |
+| GCD                   | Euclidean             | O(log min(a,b)) | O(1)           | Very efficient           |
+| LCM                   | GCD Formula           | O(log min(a,b)) | O(1)           | Use: a×b/GCD(a,b)        |
+| Prime Check           | √n with 6k±1          | O(√n)           | O(1)           | Optimal for single check |
+| Prime Factorization   | Trial Division        | O(√n)           | O(log n)       | Check up to √n           |
+| All Divisors          | Check up to √n        | O(√n)           | O(d)           | Find pairs               |
+| Sieve of Eratosthenes | Sieve                 | O(n log log n)  | O(n)           | Best for multiple primes |
+| Power                 | Binary Exponentiation | O(log n)        | O(1) iterative | Much faster than O(n)    |
+| Modular Inverse       | Extended Euclidean    | O(log m)        | O(log m)       | Or Fermat if m prime     |
 
 ---
 
 ## Important Mathematical Concepts
 
 ### Prime Numbers
-- **Definition**: Numbers > 1 with exactly two divisors (1 and itself)
-- **Fundamental Theorem**: Every integer > 1 is either prime or can be uniquely factored into primes
-- **Distribution**: Approximately n/ln(n) primes up to n
+
+* **Definition**: Numbers > 1 with exactly two divisors (1 and itself)
+* **Fundamental Theorem**: Every integer > 1 is either prime or can be uniquely factored into primes
+* **Distribution**: Approximately n/ln(n) primes up to n
 
 ### Modular Arithmetic
-- **(a + b) mod m = ((a mod m) + (b mod m)) mod m**
-- **(a × b) mod m = ((a mod m) × (b mod m)) mod m**
-- **(a^b) mod m**: Use binary exponentiation with mod at each step
-- **Division**: Use modular inverse: (a/b) mod m = (a × b⁻¹) mod m
+
+* **(a + b) mod m = ((a mod m) + (b mod m)) mod m**
+* **(a × b) mod m = ((a mod m) × (b mod m)) mod m**
+* **(a^b) mod m**: Use binary exponentiation with mod at each step
+* **Division**: Use modular inverse: (a/b) mod m = (a × b⁻¹) mod m
 
 ### GCD Properties
-- **GCD(a, b) = GCD(b, a mod b)** - Euclidean algorithm
-- **GCD(a, 0) = a**
-- **LCM(a, b) × GCD(a, b) = a × b**
-- **Bézout's Identity**: GCD(a, b) = a×x + b×y for some integers x, y
+
+* **GCD(a, b) = GCD(b, a mod b)** - Euclidean algorithm
+* **GCD(a, 0) = a**
+* **LCM(a, b) × GCD(a, b) = a × b**
+* **Bézout's Identity**: GCD(a, b) = a×x + b×y for some integers x, y
 
 ### Divisibility Rules
-- **By 2**: Last digit is even
-- **By 3**: Sum of digits divisible by 3
-- **By 5**: Last digit is 0 or 5
-- **By 9**: Sum of digits divisible by 9
-- **By 11**: Alternating sum of digits divisible by 11
+
+* **By 2**: Last digit is even
+* **By 3**: Sum of digits divisible by 3
+* **By 5**: Last digit is 0 or 5
+* **By 9**: Sum of digits divisible by 9
+* **By 11**: Alternating sum of digits divisible by 11
 
 ---
 
 ## Optimization Tips
 
 ### 1. Use Mathematical Formulas
+
 Prefer O(1) formulas over O(n) loops when available:
-- Sum of n numbers: n(n+1)/2
-- Sum of squares: n(n+1)(2n+1)/6
-- Sum of cubes: [n(n+1)/2]²
+
+* Sum of n numbers: n(n+1)/2
+* Sum of squares: n(n+1)(2n+1)/6
+* Sum of cubes: [n(n+1)/2]²
 
 ### 2. Check Up to √n
+
 For divisibility, factorization, primality - only check up to √n.
 
 ### 3. Avoid Repeated Calculations
-- Memoize GCD/LCM if computing multiple times
-- Precompute factorials for combinations
-- Use sieve for multiple prime queries
+
+* Memoize GCD/LCM if computing multiple times
+* Precompute factorials for combinations
+* Use sieve for multiple prime queries
 
 ### 4. Binary Exponentiation
+
 Always use O(log n) exponentiation, never O(n) loop for powers.
 
 ### 5. Modular Arithmetic
+
 When dealing with large numbers:
-- Apply mod at each step to prevent overflow
-- Use modular inverse for division
-- Use fast modular exponentiation
+
+* Apply mod at each step to prevent overflow
+* Use modular inverse for division
+* Use fast modular exponentiation
 
 ---
 
 ## Common Patterns
 
 ### Pattern 1: Digit Manipulation
+
 ```python
 # Extract digits right to left
 while n > 0:
@@ -1249,6 +1401,7 @@ while n > 0:
 ```
 
 ### Pattern 2: Prime-Related
+
 ```python
 # Check prime: O(√n)
 for i in range(2, int(n**0.5) + 1):
@@ -1260,6 +1413,7 @@ for i in range(2, int(n**0.5) + 1):
 ```
 
 ### Pattern 3: Factor Pairs
+
 ```python
 # Find divisors in pairs
 for i in range(1, int(n**0.5) + 1):
@@ -1268,6 +1422,7 @@ for i in range(1, int(n**0.5) + 1):
 ```
 
 ### Pattern 4: Binary Exponentiation
+
 ```python
 result = 1
 while n > 0:
@@ -1282,6 +1437,7 @@ while n > 0:
 ## Edge Cases to Remember
 
 ### Always Consider
+
 1. **n = 0**: Special case for many problems
 2. **n = 1**: Often base case
 3. **Negative numbers**: Handle sign separately
