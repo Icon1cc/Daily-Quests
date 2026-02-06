@@ -1,13 +1,13 @@
 # Recursion Problems - Complete Reference Guide
 
 ## Table of Contents
-1. [Print 1 to N](#print-1-to-n) - [Code: 1. Print_1_to_N.py](./1.%20Print_1_to_N.py)
-2. [Print N to 1](#print-n-to-1) - [Code: 2. Print_N_to_1.py](./2.%20Print_N_to_1.py)
-3. [Factorial](#factorial) - [Code: 3. Factorial.py](./3.%20Factorial.py)
-4. [Fibonacci Series](#fibonacci-series) - [Code: 4. Fibonacci_series.py](./4.%20Fibonacci_series.py)
-5. [Sum of Digits](#sum-of-digits) - [Code: 5. Sum_of_digits.py](./5.%20Sum_of_digits.py)
-6. [Palindrome Check](#palindrome-check) - [Code: 6. Palindrome.py](./6.%20Palindrome.py)
-7. [Number Palindrome](#number-palindrome) - [Code: 7. Number_Palindrome.py](./7.%20Number_Palindrome.py)
+1. [Print 1 to N](#print-1-to-n) - [Code: 01. Print 1 to N.py](./01.%20Print%201%20to%20N.py)
+2. [Print N to 1](#print-n-to-1) - [Code: 02. Print N to 1.py](./02.%20Print%20N%20to%201.py)
+3. [Factorial](#factorial) - [Code: 03. Factorial.py](./03.%20Factorial.py)
+4. [Fibonacci Series](#fibonacci-series) - [Code: 04. Fibonacci series.py](./04.%20Fibonacci%20series.py)
+5. [Sum of Digits](#sum-of-digits) - [Code: 05. Sum of digits.py](./05.%20Sum%20of%20digits.py)
+6. [Palindrome Check](#palindrome-check) - [Code: 06. Palindrome.py](./06.%20Palindrome.py)
+7. [Number Palindrome](#number-palindrome) - [Code: 07. Number Palindrome.py](./07.%20Number%20Palindrome.py)
 8. [Understanding Recursion](#understanding-recursion)
 9. [Comparison Summary](#comparison-summary)
 
@@ -26,18 +26,20 @@ Recursion is a programming technique where a function calls itself to solve a pr
 
 ### How Recursion Works
 ```
+
 Function Call → Stack Frame Created
-    ↓
+↓
 Recursive Call → New Stack Frame
-    ↓
+↓
 ... (more calls)
-    ↓
+↓
 Base Case Reached → Start Returning
-    ↓
+↓
 Previous Frames Resume → Stack Unwinding
-    ↓
+↓
 Original Call Completes
-```
+
+````
 
 ### Recursion vs Iteration
 
@@ -52,7 +54,7 @@ Original Call Completes
 ---
 
 ## Print 1 to N
-**📁 Implementation:** [1. Print_1_to_N.py](./1.%20Print_1_to_N.py)
+**📁 Implementation:** [01. Print 1 to N.py](./01.%20Print%201%20to%20N.py)
 
 ### Problem
 Print numbers from 1 to N using recursion.
@@ -69,9 +71,10 @@ def print_1_to_n(n):
         return
     print_1_to_n(n - 1)  # Recursive call FIRST
     print(n)             # Print AFTER recursive call
-```
+````
 
 **Execution Flow for n=3:**
+
 ```
 print_1_to_n(3)
   → print_1_to_n(2)
@@ -84,47 +87,56 @@ Output: 1 2 3
 ```
 
 ### Key Insight
+
 Printing **after** the recursive call ensures numbers print in ascending order.
 
 ### Time Complexity
 
-| Case | Complexity | Calculation |
-|------|------------|-------------|
-| **Best Case** | O(n) | Must make n recursive calls |
-| **Average Case** | O(n) | Exactly n function calls |
-| **Worst Case** | O(n) | Always n calls regardless |
+| Case             | Complexity | Calculation                 |
+| ---------------- | ---------- | --------------------------- |
+| **Best Case**    | O(n)       | Must make n recursive calls |
+| **Average Case** | O(n)       | Exactly n function calls    |
+| **Worst Case**   | O(n)       | Always n calls regardless   |
 
 ### Space Complexity
-- **Auxiliary Space**: O(n) - Recursion call stack depth is n
+
+* **Auxiliary Space**: O(n) - Recursion call stack depth is n
 
 ### Iterative Alternative
+
 ```python
 for i in range(1, n+1):
     print(i)
 ```
+
 **Time**: O(n), **Space**: O(1)
 
 ### When to Use Recursion Here
-- Educational purposes (understanding recursion)
-- Part of larger recursive algorithm
-- When code elegance is preferred
+
+* Educational purposes (understanding recursion)
+* Part of larger recursive algorithm
+* When code elegance is preferred
 
 **Note**: Iterative approach is more efficient for this simple task.
 
 ---
 
 ## Print N to 1
-**📁 Implementation:** [2. Print_N_to_1.py](./2.%20Print_N_to_1.py)
+
+**📁 Implementation:** [02. Print N to 1.py](./02.%20Print%20N%20to%201.py)
 
 ### Problem
+
 Print numbers from N to 1 using recursion.
 
 Example: N = 5 → Output: 5 4 3 2 1
 
 ### Logic
+
 Print the current number first, then make the recursive call with n-1.
 
 ### How It Works
+
 ```python
 def print_n_to_1(n):
     if n == 0:           # Base case
@@ -134,6 +146,7 @@ def print_n_to_1(n):
 ```
 
 **Execution Flow for n=3:**
+
 ```
 print_n_to_1(3)
   Print 3
@@ -146,46 +159,56 @@ Output: 3 2 1
 ```
 
 ### Key Insight
+
 Printing **before** the recursive call ensures numbers print in descending order.
 
 ### Comparison with Print 1 to N
-- **Print 1 to N**: Print after recursive call (ascending)
-- **Print N to 1**: Print before recursive call (descending)
+
+* **Print 1 to N**: Print after recursive call (ascending)
+* **Print N to 1**: Print before recursive call (descending)
 
 ### Time Complexity
 
-| Case | Complexity | Calculation |
-|------|------------|-------------|
-| **Best Case** | O(n) | Must make n recursive calls |
-| **Average Case** | O(n) | Exactly n function calls |
-| **Worst Case** | O(n) | Always n calls |
+| Case             | Complexity | Calculation                 |
+| ---------------- | ---------- | --------------------------- |
+| **Best Case**    | O(n)       | Must make n recursive calls |
+| **Average Case** | O(n)       | Exactly n function calls    |
+| **Worst Case**   | O(n)       | Always n calls              |
 
 ### Space Complexity
-- **Auxiliary Space**: O(n) - Recursion call stack depth is n
+
+* **Auxiliary Space**: O(n) - Recursion call stack depth is n
 
 ### Iterative Alternative
+
 ```python
 for i in range(n, 0, -1):
     print(i)
 ```
+
 **Time**: O(n), **Space**: O(1)
 
 ---
 
 ## Factorial
-**📁 Implementation:** [3. Factorial.py](./3.%20Factorial.py)
+
+**📁 Implementation:** [03. Factorial.py](./03.%20Factorial.py)
 
 ### Problem
+
 Calculate factorial of a number N (N! = N × (N-1) × (N-2) × ... × 1).
 
 Example: 5! = 5 × 4 × 3 × 2 × 1 = 120
 
 ### Logic
+
 Factorial has a natural recursive definition:
-- **Base case**: 0! = 1, 1! = 1
-- **Recursive case**: n! = n × (n-1)!
+
+* **Base case**: 0! = 1, 1! = 1
+* **Recursive case**: n! = n × (n-1)!
 
 ### How It Works
+
 ```python
 def factorial(n):
     if n == 0 or n == 1:    # Base case
@@ -194,6 +217,7 @@ def factorial(n):
 ```
 
 **Execution Flow for n=4:**
+
 ```
 factorial(4)
   → 4 * factorial(3)
@@ -207,6 +231,7 @@ Result: 24
 ```
 
 ### Mathematical Recurrence
+
 ```
 T(n) = T(n-1) + O(1)
 T(1) = O(1)
@@ -215,16 +240,18 @@ Solution: T(n) = O(n)
 
 ### Time Complexity
 
-| Case | Complexity | Calculation |
-|------|------------|-------------|
-| **Best Case** | O(1) | When n = 0 or 1 |
-| **Average Case** | O(n) | n recursive calls |
-| **Worst Case** | O(n) | Maximum n calls |
+| Case             | Complexity | Calculation       |
+| ---------------- | ---------- | ----------------- |
+| **Best Case**    | O(1)       | When n = 0 or 1   |
+| **Average Case** | O(n)       | n recursive calls |
+| **Worst Case**   | O(n)       | Maximum n calls   |
 
 ### Space Complexity
-- **Auxiliary Space**: O(n) - Call stack depth equals n
+
+* **Auxiliary Space**: O(n) - Call stack depth equals n
 
 ### Iterative Alternative
+
 ```python
 def factorial_iterative(n):
     result = 1
@@ -232,37 +259,45 @@ def factorial_iterative(n):
         result *= i
     return result
 ```
+
 **Time**: O(n), **Space**: O(1)
 
 ### Edge Cases
-- **n = 0**: Returns 1 (by definition)
-- **n = 1**: Returns 1
-- **Large n**: Risk of integer overflow (Python handles big integers)
-- **Negative n**: Mathematically undefined (should handle/validate)
+
+* **n = 0**: Returns 1 (by definition)
+* **n = 1**: Returns 1
+* **Large n**: Risk of integer overflow (Python handles big integers)
+* **Negative n**: Mathematically undefined (should handle/validate)
 
 ### When to Use
-- Mathematical calculations
-- Permutation/combination formulas
-- Probability calculations
-- Classic recursion teaching example
+
+* Mathematical calculations
+* Permutation/combination formulas
+* Probability calculations
+* Classic recursion teaching example
 
 ---
 
 ## Fibonacci Series
-**📁 Implementation:** [4. Fibonacci_series.py](./4.%20Fibonacci_series.py)
+
+**📁 Implementation:** [04. Fibonacci series.py](./04.%20Fibonacci%20series.py)
 
 ### Problem
+
 Calculate the nth Fibonacci number where:
-- F(0) = 0
-- F(1) = 1
-- F(n) = F(n-1) + F(n-2) for n ≥ 2
+
+* F(0) = 0
+* F(1) = 1
+* F(n) = F(n-1) + F(n-2) for n ≥ 2
 
 Example: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...
 
 ### Logic
+
 Fibonacci is a classic example of recursion with two recursive calls per function.
 
 ### How It Works (Naive Recursion)
+
 ```python
 def fibonacci(n):
     if n <= 1:              # Base cases
@@ -271,6 +306,7 @@ def fibonacci(n):
 ```
 
 **Execution Tree for n=4:**
+
 ```
                     fib(4)
                    /      \
@@ -283,24 +319,28 @@ def fibonacci(n):
 
 ### Time Complexity (Naive)
 
-| Case | Complexity | Calculation |
-|------|------------|-------------|
-| **Best Case** | O(1) | When n = 0 or 1 |
-| **Average Case** | O(2ⁿ) | Exponential - each call makes 2 more calls |
-| **Worst Case** | O(2ⁿ) | T(n) = T(n-1) + T(n-2) + O(1) ≈ O(φⁿ) where φ ≈ 1.618 |
+| Case             | Complexity | Calculation                                           |
+| ---------------- | ---------- | ----------------------------------------------------- |
+| **Best Case**    | O(1)       | When n = 0 or 1                                       |
+| **Average Case** | O(2ⁿ)      | Exponential - each call makes 2 more calls            |
+| **Worst Case**   | O(2ⁿ)      | T(n) = T(n-1) + T(n-2) + O(1) ≈ O(φⁿ) where φ ≈ 1.618 |
 
 ### Space Complexity (Naive)
-- **Auxiliary Space**: O(n) - Maximum recursion depth is n
+
+* **Auxiliary Space**: O(n) - Maximum recursion depth is n
 
 ### Why Naive Recursion is Inefficient
+
 Massive redundant calculations! Example for fib(5):
-- fib(3) calculated 2 times
-- fib(2) calculated 3 times
-- fib(1) calculated 5 times
+
+* fib(3) calculated 2 times
+* fib(2) calculated 3 times
+* fib(1) calculated 5 times
 
 ### Optimized Approaches
 
 #### 1. Memoization (Top-Down DP)
+
 ```python
 def fib_memo(n, memo={}):
     if n in memo:
@@ -310,9 +350,11 @@ def fib_memo(n, memo={}):
     memo[n] = fib_memo(n-1, memo) + fib_memo(n-2, memo)
     return memo[n]
 ```
+
 **Time**: O(n), **Space**: O(n)
 
 #### 2. Tabulation (Bottom-Up DP)
+
 ```python
 def fib_dp(n):
     if n <= 1:
@@ -323,9 +365,11 @@ def fib_dp(n):
         dp[i] = dp[i-1] + dp[i-2]
     return dp[n]
 ```
+
 **Time**: O(n), **Space**: O(n)
 
 #### 3. Space-Optimized Iterative
+
 ```python
 def fib_optimized(n):
     if n <= 1:
@@ -336,37 +380,43 @@ def fib_optimized(n):
         prev2, prev1 = prev1, current
     return prev1
 ```
+
 **Time**: O(n), **Space**: O(1)
 
 ### Complexity Comparison
 
-| Approach | Time | Space | Notes |
-|----------|------|-------|-------|
-| Naive Recursion | O(2ⁿ) | O(n) | Very slow, educational only |
-| Memoization | O(n) | O(n) | Good for recursive thinking |
-| Tabulation | O(n) | O(n) | Classic DP |
-| Space-Optimized | O(n) | O(1) | Best practical solution |
+| Approach        | Time  | Space | Notes                       |
+| --------------- | ----- | ----- | --------------------------- |
+| Naive Recursion | O(2ⁿ) | O(n)  | Very slow, educational only |
+| Memoization     | O(n)  | O(n)  | Good for recursive thinking |
+| Tabulation      | O(n)  | O(n)  | Classic DP                  |
+| Space-Optimized | O(n)  | O(1)  | Best practical solution     |
 
 ### When to Use Each
-- **Naive**: Only for learning/small n (< 20)
-- **Memoization**: When recursion is natural to problem
-- **Tabulation**: Standard DP problems
-- **Optimized**: Production code, large n
+
+* **Naive**: Only for learning/small n (< 20)
+* **Memoization**: When recursion is natural to problem
+* **Tabulation**: Standard DP problems
+* **Optimized**: Production code, large n
 
 ---
 
 ## Sum of Digits
-**📁 Implementation:** [5. Sum_of_digits.py](./5.%20Sum_of_digits.py)
+
+**📁 Implementation:** [05. Sum of digits.py](./05.%20Sum%20of%20digits.py)
 
 ### Problem
+
 Calculate the sum of all digits in a number.
 
 Example: 1234 → 1 + 2 + 3 + 4 = 10
 
 ### Logic
+
 Extract the last digit (n % 10), add it to the sum of remaining digits (n // 10).
 
 ### How It Works
+
 ```python
 def sum_of_digits(n):
     if n == 0:              # Base case
@@ -375,6 +425,7 @@ def sum_of_digits(n):
 ```
 
 **Execution Flow for n=123:**
+
 ```
 sum_of_digits(123)
   → 3 + sum_of_digits(12)
@@ -388,7 +439,9 @@ Result: 6
 ```
 
 ### Step-by-Step Breakdown
+
 For n = 1234:
+
 1. 1234 % 10 = 4, remaining: 123
 2. 123 % 10 = 3, remaining: 12
 3. 12 % 10 = 2, remaining: 1
@@ -398,18 +451,20 @@ For n = 1234:
 
 ### Time Complexity
 
-| Case | Complexity | Calculation |
-|------|------------|-------------|
-| **Best Case** | O(1) | Single digit (n < 10) |
-| **Average Case** | O(log n) | Number of digits = log₁₀(n) |
-| **Worst Case** | O(log n) | Recursive calls equal to number of digits |
+| Case             | Complexity | Calculation                               |
+| ---------------- | ---------- | ----------------------------------------- |
+| **Best Case**    | O(1)       | Single digit (n < 10)                     |
+| **Average Case** | O(log n)   | Number of digits = log₁₀(n)               |
+| **Worst Case**   | O(log n)   | Recursive calls equal to number of digits |
 
 **Why O(log n)?** Because we divide by 10 each time, similar to binary search dividing by 2.
 
 ### Space Complexity
-- **Auxiliary Space**: O(log n) - Call stack depth equals number of digits
+
+* **Auxiliary Space**: O(log n) - Call stack depth equals number of digits
 
 ### Iterative Alternative
+
 ```python
 def sum_of_digits_iterative(n):
     total = 0
@@ -418,33 +473,40 @@ def sum_of_digits_iterative(n):
         n //= 10
     return total
 ```
+
 **Time**: O(log n), **Space**: O(1)
 
 ### Edge Cases
-- **n = 0**: Returns 0
-- **Single digit**: Returns that digit
-- **Negative numbers**: Take absolute value first
+
+* **n = 0**: Returns 0
+* **Single digit**: Returns that digit
+* **Negative numbers**: Take absolute value first
 
 ### Applications
-- Digital root calculation
-- Checksum algorithms
-- Number theory problems
-- Validation algorithms (credit cards)
+
+* Digital root calculation
+* Checksum algorithms
+* Number theory problems
+* Validation algorithms (credit cards)
 
 ---
 
 ## Palindrome Check
-**📁 Implementation:** [6. Palindrome.py](./6.%20Palindrome.py)
+
+**📁 Implementation:** [06. Palindrome.py](./06.%20Palindrome.py)
 
 ### Problem
+
 Check if a string is a palindrome (reads same forwards and backwards).
 
 Example: "racecar" → True, "hello" → False
 
 ### Logic
+
 Compare first and last characters. If they match, recursively check the substring without those characters.
 
 ### How It Works
+
 ```python
 def is_palindrome(s, start, end):
     if start >= end:        # Base case: single char or empty
@@ -455,6 +517,7 @@ def is_palindrome(s, start, end):
 ```
 
 **Execution Flow for "racecar":**
+
 ```
 is_palindrome("racecar", 0, 6)
   r == r ✓
@@ -473,16 +536,18 @@ Result: True
 
 ### Time Complexity
 
-| Case | Complexity | Calculation |
-|------|------------|-------------|
-| **Best Case** | O(1) | First and last chars don't match |
-| **Average Case** | O(n) | Check approximately n/2 pairs |
-| **Worst Case** | O(n) | Perfect palindrome, check all n/2 pairs |
+| Case             | Complexity | Calculation                             |
+| ---------------- | ---------- | --------------------------------------- |
+| **Best Case**    | O(1)       | First and last chars don't match        |
+| **Average Case** | O(n)       | Check approximately n/2 pairs           |
+| **Worst Case**   | O(n)       | Perfect palindrome, check all n/2 pairs |
 
 ### Space Complexity
-- **Auxiliary Space**: O(n) - Recursion depth is n/2 (each call removes 2 chars)
+
+* **Auxiliary Space**: O(n) - Recursion depth is n/2 (each call removes 2 chars)
 
 ### Iterative Alternative (Two Pointer)
+
 ```python
 def is_palindrome_iterative(s):
     left, right = 0, len(s) - 1
@@ -493,38 +558,46 @@ def is_palindrome_iterative(s):
         right -= 1
     return True
 ```
+
 **Time**: O(n), **Space**: O(1)
 
 ### Variations
-- **Ignore case**: Convert to lowercase first
-- **Ignore spaces/punctuation**: Filter non-alphanumeric characters
-- **Substring palindrome**: Find longest palindromic substring
+
+* **Ignore case**: Convert to lowercase first
+* **Ignore spaces/punctuation**: Filter non-alphanumeric characters
+* **Substring palindrome**: Find longest palindromic substring
 
 ### When to Use
-- String validation
-- Pattern matching
-- Algorithm problems
-- Data validation
+
+* String validation
+* Pattern matching
+* Algorithm problems
+* Data validation
 
 ---
 
 ## Number Palindrome
-**📁 Implementation:** [7. Number_Palindrome.py](./7.%20Number_Palindrome.py)
+
+**📁 Implementation:** [07. Number Palindrome.py](./07.%20Number%20Palindrome.py)
 
 ### Problem
+
 Check if a number is a palindrome (reads same forwards and backwards).
 
 Example: 12321 → True, 12345 → False
 
 ### Approach 1: Convert to String
+
 ```python
 def is_palindrome_string(n):
     s = str(n)
     return s == s[::-1]
 ```
+
 **Time**: O(log n), **Space**: O(log n)
 
 ### Approach 2: Reverse Number Mathematically
+
 ```python
 def is_palindrome_math(n):
     if n < 0:
@@ -538,6 +611,7 @@ def is_palindrome_math(n):
 ```
 
 ### Approach 3: Recursive (Check Digits)
+
 ```python
 def is_palindrome_recursive(n, divisor):
     if n < 10:
@@ -554,30 +628,32 @@ def is_palindrome_recursive(n, divisor):
 
 ### Time Complexity
 
-| Approach | Time | Calculation |
-|----------|------|-------------|
-| String Conversion | O(log n) | Create string of d digits |
-| Math Reversal | O(log n) | d iterations where d = digits |
-| Recursive | O(log n) | d/2 recursive calls |
+| Approach          | Time     | Calculation                   |
+| ----------------- | -------- | ----------------------------- |
+| String Conversion | O(log n) | Create string of d digits     |
+| Math Reversal     | O(log n) | d iterations where d = digits |
+| Recursive         | O(log n) | d/2 recursive calls           |
 
 ### Space Complexity
 
-| Approach | Space | Notes |
-|----------|-------|-------|
+| Approach          | Space    | Notes          |
+| ----------------- | -------- | -------------- |
 | String Conversion | O(log n) | String storage |
-| Math Reversal | O(1) | Only variables |
-| Recursive | O(log n) | Call stack |
+| Math Reversal     | O(1)     | Only variables |
+| Recursive         | O(log n) | Call stack     |
 
 ### Edge Cases
-- **Negative numbers**: Generally not palindromes (due to '-' sign)
-- **Single digit**: Always palindrome
-- **Trailing zeros**: 100 is not palindrome (reversed is 001 = 1)
+
+* **Negative numbers**: Generally not palindromes (due to '-' sign)
+* **Single digit**: Always palindrome
+* **Trailing zeros**: 100 is not palindrome (reversed is 001 = 1)
 
 ### When to Use
-- Number validation
-- Mathematical problems
-- Pattern recognition
-- Algorithm challenges
+
+* Number validation
+* Mathematical problems
+* Pattern recognition
+* Algorithm challenges
 
 ---
 
@@ -585,38 +661,41 @@ def is_palindrome_recursive(n, divisor):
 
 ### Time & Space Complexity Table
 
-| Problem | Time | Space | Iterative Time | Iterative Space |
-|---------|------|-------|----------------|-----------------|
-| Print 1 to N | O(n) | O(n) | O(n) | O(1) |
-| Print N to 1 | O(n) | O(n) | O(n) | O(1) |
-| Factorial | O(n) | O(n) | O(n) | O(1) |
-| Fibonacci (Naive) | O(2ⁿ) | O(n) | O(n) | O(1)* |
-| Sum of Digits | O(log n) | O(log n) | O(log n) | O(1) |
-| String Palindrome | O(n) | O(n) | O(n) | O(1) |
-| Number Palindrome | O(log n) | O(log n) | O(log n) | O(1) |
+| Problem           | Time     | Space    | Iterative Time | Iterative Space |
+| ----------------- | -------- | -------- | -------------- | --------------- |
+| Print 1 to N      | O(n)     | O(n)     | O(n)           | O(1)            |
+| Print N to 1      | O(n)     | O(n)     | O(n)           | O(1)            |
+| Factorial         | O(n)     | O(n)     | O(n)           | O(1)            |
+| Fibonacci (Naive) | O(2ⁿ)    | O(n)     | O(n)           | O(1)*           |
+| Sum of Digits     | O(log n) | O(log n) | O(log n)       | O(1)            |
+| String Palindrome | O(n)     | O(n)     | O(n)           | O(1)            |
+| Number Palindrome | O(log n) | O(log n) | O(log n)       | O(1)            |
 
 *With space optimization
 
 ### When to Use Recursion
 
 **Good Use Cases:**
-- Problem has natural recursive structure (trees, graphs)
-- Divide and conquer algorithms (merge sort, quick sort)
-- Backtracking problems (N-Queens, Sudoku)
-- Mathematical definitions (factorial, Fibonacci)
-- Code readability is prioritized
+
+* Problem has natural recursive structure (trees, graphs)
+* Divide and conquer algorithms (merge sort, quick sort)
+* Backtracking problems (N-Queens, Sudoku)
+* Mathematical definitions (factorial, Fibonacci)
+* Code readability is prioritized
 
 **Avoid Recursion When:**
-- Simple iteration suffices (print numbers)
-- Stack overflow risk (very deep recursion)
-- Performance is critical (function call overhead)
-- Memory is constrained (call stack usage)
+
+* Simple iteration suffices (print numbers)
+* Stack overflow risk (very deep recursion)
+* Performance is critical (function call overhead)
+* Memory is constrained (call stack usage)
 
 ---
 
 ## Recursion Patterns
 
 ### Pattern 1: Linear Recursion (Single Call)
+
 ```python
 # Example: Factorial
 def factorial(n):
@@ -626,6 +705,7 @@ def factorial(n):
 ```
 
 ### Pattern 2: Binary Recursion (Two Calls)
+
 ```python
 # Example: Fibonacci
 def fib(n):
@@ -635,6 +715,7 @@ def fib(n):
 ```
 
 ### Pattern 3: Tail Recursion (Last Operation)
+
 ```python
 # Example: Tail-recursive factorial
 def factorial_tail(n, acc=1):
@@ -642,9 +723,11 @@ def factorial_tail(n, acc=1):
         return acc
     return factorial_tail(n-1, n * acc)
 ```
+
 **Note**: Python doesn't optimize tail recursion, but pattern is useful
 
 ### Pattern 4: Multiple Base Cases
+
 ```python
 # Example: String palindrome
 def is_palindrome(s, start, end):
@@ -660,6 +743,7 @@ def is_palindrome(s, start, end):
 ## Common Recursion Mistakes
 
 ### 1. Missing Base Case
+
 ```python
 # WRONG - Infinite recursion
 def factorial(n):
@@ -673,6 +757,7 @@ def factorial(n):
 ```
 
 ### 2. Base Case Never Reached
+
 ```python
 # WRONG - Progress in wrong direction
 def print_n_to_1(n):
@@ -690,6 +775,7 @@ def print_n_to_1(n):
 ```
 
 ### 3. Stack Overflow
+
 ```python
 # Problem: Too deep recursion
 factorial(10000)  # May cause stack overflow
@@ -700,6 +786,7 @@ sys.setrecursionlimit(15000)  # Use cautiously
 ```
 
 ### 4. Inefficient Recursion (Fibonacci)
+
 ```python
 # WRONG - O(2^n) - Recalculates same values
 def fib(n):
@@ -722,7 +809,9 @@ def fib(n, memo={}):
 ## Debugging Recursion Tips
 
 ### 1. Trace Execution
+
 Add print statements to see call flow:
+
 ```python
 def factorial(n, depth=0):
     indent = "  " * depth
@@ -736,19 +825,24 @@ def factorial(n, depth=0):
 ```
 
 ### 2. Verify Base Cases
+
 Test with smallest possible inputs:
-- n = 0
-- n = 1
-- Empty string
-- Single element
+
+* n = 0
+* n = 1
+* Empty string
+* Single element
 
 ### 3. Check Progress
+
 Ensure each recursive call moves toward base case:
-- Parameters getting smaller
-- String/array getting shorter
-- Pointers converging
+
+* Parameters getting smaller
+* String/array getting shorter
+* Pointers converging
 
 ### 4. Visualize Call Stack
+
 Draw the recursion tree for small inputs to understand flow.
 
 ---
@@ -756,7 +850,9 @@ Draw the recursion tree for small inputs to understand flow.
 ## Advanced Recursion Concepts
 
 ### Memoization (Dynamic Programming)
+
 Cache results to avoid redundant calculations:
+
 ```python
 def expensive_recursion(n, memo={}):
     if n in memo:
@@ -767,7 +863,9 @@ def expensive_recursion(n, memo={}):
 ```
 
 ### Mutual Recursion
+
 Two functions call each other:
+
 ```python
 def is_even(n):
     if n == 0:
@@ -781,7 +879,9 @@ def is_odd(n):
 ```
 
 ### Indirect Recursion
+
 Function calls another which eventually calls the original:
+
 ```python
 def func_a(n):
     if n > 0:
