@@ -9,18 +9,23 @@ class Node:
         self.next = None
 
 def delete_head(head):
-    # If the list is empty, return None
+    # Case 1: Empty List
     if head is None:
         return None
     
-    # If the list has only one node, return None after deletion
+    # Case 2: Only one node
     if head.next is None:
         return None
     
-    # Move head to the next node
-    new_head = head.next
-    new_head.prev = None  # Set the new head's prev to None
-    return new_head       # Return the new head
+    # Case 3: Multiple nodes
+    new_head = head.next      # Move head forward
+    new_head.prev = None      # Remove link to old head
+    
+    # Optional: Clean up old head (good practice in some languages, 
+    # but Python's Garbage Collector handles it)
+    head.next = None 
+    
+    return new_head
 
 # Helper function to create list from user input
 def create_doubly_linked_list(arr):
@@ -48,11 +53,22 @@ def display(head):
         nodes.append(str(temp.data))
         temp = temp.next
     print(" <-> ".join(nodes))
+
 # --- Main Execution ---    
+
 # 1. Get input for the initial list
 user_input = input("Enter the list values separated by space (e.g., 10 20 30): ")
 values = user_input.split() 
-# Create the list
+
+# 2. Create and Display
 head = create_doubly_linked_list(values)
 print("Original List:")
-display(head)   
+display(head)
+
+# 3. Delete Head
+print("\nDeleting Head...")
+head = delete_head(head)
+
+# 4. Display Result
+print("Updated List:")
+display(head)
