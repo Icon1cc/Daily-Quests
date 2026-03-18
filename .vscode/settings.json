@@ -1,0 +1,4 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:pyenv",
+    "python.defaultInterpreterPath": "/Users/icon1c/.pyenv/shims/python3"
+}
