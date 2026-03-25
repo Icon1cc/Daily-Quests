@@ -31,9 +31,13 @@ Expected Output:
 # Write your solution below this line
 # -----------------------------------
 
+class Dog:
+    pass
+
+my_dog = Dog()
 
 
 # Test your solution
 # ------------------
 # Uncomment the following lines to test:
-# print(type(my_dog))
+print(type(my_dog))
