@@ -35,10 +35,20 @@ repr: Point(3, 5)
 # Write your solution below this line
 # -----------------------------------
 
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __repr__(self):
+        return f"Point({self.x}, {self.y})"
+
+    def __str__(self):
+        return f"({self.x}, {self.y})"
 
 
 # Test your solution
 # ------------------
-# point = Point(3, 5)
-# print(f"str: {str(point)}")
-# print(f"repr: {repr(point)}")
+point = Point(3, 5)
+print(f"str: {str(point)}")
+print(f"repr: {repr(point)}")

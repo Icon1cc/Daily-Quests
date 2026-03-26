@@ -33,9 +33,16 @@ Expected Output:
 # Write your solution below this line
 # -----------------------------------
 
+class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
 
+    def __str__(self):
+        return f'"{self.title}" by {self.author} ({self.pages} pages)'
 
 # Test your solution
 # ------------------
-# book = Book("The Great Gatsby", "F. Scott Fitzgerald", 180)
-# print(book)  # This should print nicely now!
+book = Book("The Great Gatsby", "F. Scott Fitzgerald", 180)
+print(book)  # This should print nicely now!
