@@ -40,15 +40,26 @@ Total employees: 3
 # Write your solution below this line
 # -----------------------------------
 
+class Employee:
+    company_name = "TechCorp"  # Class attribute shared by all employees
+    employee_count = 0         # Class attribute to track total employees
 
+    def __init__(self, name, salary):
+        self.name = name       # Instance attribute for employee's name
+        self.salary = salary   # Instance attribute for employee's salary
+        Employee.employee_count += 1  # Increment employee count when a new employee is created
+
+    def display(self):
+        print(f"{self.name} works at {Employee.company_name} with salary ${self.salary}")
 
 # Test your solution
 # ------------------
-# emp1 = Employee("Alice", 50000)
-# emp2 = Employee("Bob", 60000)
-# emp3 = Employee("Charlie", 55000)
-#
-# emp1.display()
-# emp2.display()
-# emp3.display()
-# print(f"Total employees: {Employee.employee_count}")
+emp1 = Employee("Alice", 50000)
+emp2 = Employee("Bob", 60000)
+emp3 = Employee("Charlie", 55000)
+
+emp1.display()
+emp2.display()
+emp3.display()
+print(f"Total employees: {Employee.employee_count}")
+

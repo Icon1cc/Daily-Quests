@@ -40,14 +40,23 @@ Student: Charlie, Grade: 92, School: MIT
 # Write your solution below this line
 # -----------------------------------
 
+class Student:
+    def __init__(self, name, grade=0, school="Unknown"):
+        self.name = name
+        self.grade = grade
+        self.school = school
+
+    def display_info(self):
+        print(f"Student: {self.name}, Grade: {self.grade}, School: {self.school}")
+
 
 
 # Test your solution
 # ------------------
-# student1 = Student("Alice")
-# student2 = Student("Bob", 85)
-# student3 = Student("Charlie", 92, "MIT")
-#
-# student1.display_info()
-# student2.display_info()
-# student3.display_info()
+student1 = Student("Alice")
+student2 = Student("Bob", 85)
+student3 = Student("Charlie", 92, "MIT")
+
+student1.display_info()
+student2.display_info()
+student3.display_info()
