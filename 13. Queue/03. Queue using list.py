@@ -1,32 +1,42 @@
 """
-Implementing a Queue in Python using List.
+Implementing a Queue in Python using a List.
 """
 
+# Global queue list
 q = []
+
 def enqueue(item):
+    """Add an element to the rear of the queue."""
     q.append(item)
     print(f"Enqueued: {item}")
+
 def dequeue():
+    """Remove and return the front element of the queue."""
     if not is_empty():
-        return q.pop(0)
+        return q.pop(0)  # O(n) complexity in a standard list
     else:
-        raise IndexError("Dequeue from an empty queue")
+        # Raising an error is better than returning a string for logic flow
+        raise IndexError("Cannot dequeue from an empty queue")
+
 def display():
+    """Show all elements in the queue."""
     return q
+
 def get_front():
-    if not is_empty():
-        return q[0]
-    else:
-        return "Queue is empty"
+    """Retrieve the front element without removing it."""
+    return q[0] if not is_empty() else "Queue is empty"
+
 def get_rear():
-    if not is_empty():
-        return q[-1]
-    else:
-        return "Queue is empty"
+    """Retrieve the rear element without removing it."""
+    return q[-1] if not is_empty() else "Queue is empty"
+
 def is_empty():
+    """Check if the queue is empty."""
     return len(q) == 0
+
 def size():
-    return len(q)   
+    """Check the size of the queue."""
+    return len(q)
 
 # --- Demonstration ---
 if __name__ == "__main__":  
@@ -36,22 +46,21 @@ if __name__ == "__main__":
     enqueue("Cherry")
 
     # 2. Display Queue
-    print("\nCurrent Queue:", display())
+    print(f"\nCurrent Queue: {display()}")
 
     # 3. Get Front and Rear
-    print("Front element:", get_front())
-    print("Rear element:", get_rear())
+    print(f"Front element: {get_front()}")
+    print(f"Rear element: {get_rear()}")
 
     # 4. Dequeue an element
-    print("Dequeue element:", dequeue())
+    try:
+        print(f"Dequeue element: {dequeue()}")
+    except IndexError as e:
+        print(e)
 
     # 5. Display Queue after Dequeue
-    print("Queue after dequeue:", display())
+    print(f"Queue after dequeue: {display()}")
 
-    # 6. Check if the queue is empty
-    print("Is the queue empty?", is_empty())
-
-    # 7. Check the size of the queue
-    print("Size of the queue:", size())
-
-    
+    # 6. Check status and size
+    print(f"Is the queue empty? {is_empty()}")
+    print(f"Size of the queue: {size()}")
