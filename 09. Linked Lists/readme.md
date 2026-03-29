@@ -1,15 +1,15 @@
 # Linked List - Complete Reference Guide
 
 ## Table of Contents
-1. [Simple Linked List](#simple-linked-list) - [Code: Simple Linked List.py](./1.%20Simple%20Linked%20List.py)
-2. [Traversing a Linked List](#traversing-a-linked-list) - [Code: Traversing a linked list.py](./2.%20Traversing%20a%20linked%20list.py)
-3. [Search in Linked List](#search-in-linked-list) - [Code: Search in Linked List.py](./3.%20Search%20in%20Linked%20List.py)
-4. [Insert at Beginning](#insert-at-beginning) - [Code: Insert at the beginning of linked list.py](./4.%20Insert%20at%20the%20beginning%20of%20linked%20list.py)
-5. [Insert at End](#insert-at-end) - [Code: Insert at the end of linked list.py](./5.%20Insert%20at%20the%20end%20of%20linked%20list.py)
-6. [Insert at Given Position](#insert-at-given-position) - [Code: Insert at a given position in singly linked list.py](./6.%20Insert%20at%20a%20given%20position%20in%20singly%20linked%20list.py)
-7. [Delete First Node](#delete-first-node) - [Code: Delete first node of linked list.py](./7.%20Delete%20first%20node%20of%20linked%20list.py)
-8. [Delete Last Node](#delete-last-node) - [Code: Delete last node of linked list.py](./8.%20Delete%20last%20node%20of%20linked%20list.py)
-9. [Delete Node with Pointer Only](#delete-node-with-pointer-only) - [Code: Delete a node with only pointer given to it.py](./9.%20Delete%20a%20node%20with%20only%20pointer%20given%20to%20it.py)
+1. [Simple Linked List](#simple-linked-list) - [Code: Simple Linked List.py](./01.%20Simple%20Linked%20List.py)
+2. [Traversing a Linked List](#traversing-a-linked-list) - [Code: Traversing a linked list.py](./02.%20Traversing%20a%20linked%20list.py)
+3. [Search in Linked List](#search-in-linked-list) - [Code: Search in Linked List.py](./03.%20Search%20in%20Linked%20List.py)
+4. [Insert at Beginning](#insert-at-beginning) - [Code: Insert at the beginning of linked list.py](./04.%20Insert%20at%20the%20beginning%20of%20linked%20list.py)
+5. [Insert at End](#insert-at-end) - [Code: Insert at the end of linked list.py](./05.%20Insert%20at%20the%20end%20of%20linked%20list.py)
+6. [Insert at Given Position](#insert-at-given-position) - [Code: Insert at a given position in singly linked list.py](./06.%20Insert%20at%20a%20given%20position%20in%20singly%20linked%20list.py)
+7. [Delete First Node](#delete-first-node) - [Code: Delete first node of linked list.py](./07.%20Delete%20first%20node%20of%20linked%20list.py)
+8. [Delete Last Node](#delete-last-node) - [Code: Delete last node of linked list.py](./08.%20Delete%20last%20node%20of%20linked%20list.py)
+9. [Delete Node with Pointer Only](#delete-node-with-pointer-only) - [Code: Delete a node with only pointer given to it.py](./09.%20Delete%20a%20node%20with%20only%20pointer%20given%20to%20it.py)
 10. [Sorted Insert](#sorted-insert) - [Code: Sorted Insert in a linked list.py](./10.%20Sorted%20Insert%20in%20a%20linked%20list.py)
 11. [Insert in Middle](#insert-in-middle) - [Code: Insert a node in the middle of linked list.py](./11.%20Insert%20a%20node%20in%20the%20middle%20of%20linked%20list.py)
 12. [N-th Node from End](#nth-node-from-end) - [Code: Find n-th Node from the end of the linked list.py](./12.%20Find%20n-th%20Node%20from%20the%20end%20of%20the%20linked%20list.py)
@@ -55,7 +55,7 @@ This guide covers **Singly Linked Lists**.
 ---
 
 ## Simple Linked List
-**📁 Implementation:** [Simple Linked List.py](./1.%20Simple%20Linked%20List.py)
+**📁 Implementation:** [Simple Linked List.py](./01.%20Simple%20Linked%20List.py)
 
 ### Node Class
 ```python
@@ -102,7 +102,7 @@ head → [10|•] → [20|•] → [30|None]
 ---
 
 ## Traversing a Linked List
-**📁 Implementation:** [Traversing a linked list.py](./2.%20Traversing%20a%20linked%20list.py)
+**📁 Implementation:** [Traversing a linked list.py](./02.%20Traversing%20a%20linked%20list.py)
 
 ### Problem
 Visit and print all nodes in the linked list.
@@ -160,7 +160,7 @@ def traverse_recursive(head):
 ---
 
 ## Search in Linked List
-**📁 Implementation:** [Search in Linked List.py](./3.%20Search%20in%20Linked%20List.py)
+**📁 Implementation:** [Search in Linked List.py](./03.%20Search%20in%20Linked%20List.py)
 
 ### Problem
 Find if a value exists in the linked list and return its position (1-indexed) or -1.
@@ -210,7 +210,7 @@ search(head, 50) → -1
 ---
 
 ## Insert at Beginning
-**📁 Implementation:** [Insert at the beginning of linked list.py](./4.%20Insert%20at%20the%20beginning%20of%20linked%20list.py)
+**📁 Implementation:** [Insert at the beginning of linked list.py](./04.%20Insert%20at%20the%20beginning%20of%20linked%20list.py)
 
 ### Problem
 Add a new node at the start of the linked list.
@@ -255,7 +255,7 @@ After: 10 → 20 → 30
 ---
 
 ## Insert at End
-**📁 Implementation:** [Insert at the end of linked list.py](./5.%20Insert%20at%20the%20end%20of%20linked%20list.py)
+**📁 Implementation:** [Insert at the end of linked list.py](./05.%20Insert%20at%20the%20end%20of%20linked%20list.py)
 
 ### Problem
 Add a new node at the end of the linked list.
@@ -324,7 +324,7 @@ class LinkedList:
 ---
 
 ## Insert at Given Position
-**📁 Implementation:** [Insert at a given position in singly linked list.py](./6.%20Insert%20at%20a%20given%20position%20in%20singly%20linked%20list.py)
+**📁 Implementation:** [Insert at a given position in singly linked list.py](./06.%20Insert%20at%20a%20given%20position%20in%20singly%20linked%20list.py)
 
 ### Problem
 Insert a node at a specific position (1-indexed).
@@ -388,7 +388,7 @@ After: 10 → 20 → 30 → 40
 ---
 
 ## Delete First Node
-**📁 Implementation:** [Delete first node of linked list.py](./7.%20Delete%20first%20node%20of%20linked%20list.py)
+**📁 Implementation:** [Delete first node of linked list.py](./07.%20Delete%20first%20node%20of%20linked%20list.py)
 
 ### Problem
 Remove the first node from the linked list.
@@ -429,7 +429,7 @@ After: head → [20|•] → [30|None]
 ---
 
 ## Delete Last Node
-**📁 Implementation:** [Delete last node of linked list.py](./8.%20Delete%20last%20node%20of%20linked%20list.py)
+**📁 Implementation:** [Delete last node of linked list.py](./08.%20Delete%20last%20node%20of%20linked%20list.py)
 
 ### Problem
 Remove the last node from the linked list.
@@ -482,7 +482,7 @@ After: [10|•] → [20|None]
 ---
 
 ## Delete Node with Pointer Only
-**📁 Implementation:** [Delete a node with only pointer given to it.py](./9.%20Delete%20a%20node%20with%20only%20pointer%20given%20to%20it.py)
+**📁 Implementation:** [Delete a node with only pointer given to it.py](./09.%20Delete%20a%20node%20with%20only%20pointer%20given%20to%20it.py)
 
 ### Problem
 Delete a node when you only have a pointer to that node (not the head). Assume it's not the last node.

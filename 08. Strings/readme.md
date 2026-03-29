@@ -1,15 +1,15 @@
 # Strings - Complete Reference Guide
 
 ## Table of Contents
-1. [Strings in Python](#strings-in-python) - [Code: Strings in python.py](./1.%20Strings%20in%20python.py)
-2. [Escape Sequences and Raw Strings](#escape-sequences-and-raw-strings) - [Code: Escape Sequences.py](./2.%20Escape%20Sequences.py)
-3. [String Formatting](#string-formatting) - [Code: String formatting.py](./3.%20String%20formatting.py)
-4. [String Comparison](#string-comparison) - [Code: String Comparison.py](./4.%20String%20Comparison.py)
-5. [Substring Based Operations](#substring-based-operations) - [Code: String operations using substring.py](./5.%20String%20operations%20using%20substring.py)
-6. [Common Built-in String Operations](#common-built-in-string-operations) - [Code: String operations (2).py](./6.%20String%20operations%20(2).py)
-7. [Reverse a String](#reverse-a-string) - [Code: Reverse a string.py](./7.%20Reverse%20a%20string.py)
-8. [Check if a String is Rotated](#check-if-a-string-is-rotated) - [Code: Check if a string is rotated.py](./8.%20Check%20if%20a%20string%20is%20rotated.py)
-9. [Check for Palindrome](#check-for-palindrome) - [Code: Check for palindrome.py](./9.%20Check%20for%20palindrome.py)
+1. [Strings in Python](#strings-in-python) - [Code: Strings in python.py](./01.%20Strings%20in%20python.py)
+2. [Escape Sequences and Raw Strings](#escape-sequences-and-raw-strings) - [Code: Escape Sequences.py](./02.%20Escape%20Sequences.py)
+3. [String Formatting](#string-formatting) - [Code: String formatting.py](./03.%20String%20formatting.py)
+4. [String Comparison](#string-comparison) - [Code: String Comparison.py](./04.%20String%20Comparison.py)
+5. [Substring Based Operations](#substring-based-operations) - [Code: String operations using substring.py](./05.%20String%20operations%20using%20substring.py)
+6. [Common Built-in String Operations](#common-built-in-string-operations) - [Code: String operations (2).py](./06.%20String%20operations%20(2).py)
+7. [Reverse a String](#reverse-a-string) - [Code: Reverse a string.py](./07.%20Reverse%20a%20string.py)
+8. [Check if a String is Rotated](#check-if-a-string-is-rotated) - [Code: Check if a string is rotated.py](./08.%20Check%20if%20a%20string%20is%20rotated.py)
+9. [Check for Palindrome](#check-for-palindrome) - [Code: Check for palindrome.py](./09.%20Check%20for%20palindrome.py)
 10. [Check if a String is a Subsequence](#check-if-a-string-is-a-subsequence-of-another) - [Code: Check if a string is subsequence of other.py](./10.%20Check%20if%20a%20string%20is%20subsequence%20of%20other.py)
 11. [Check for Anagram](#check-for-anagram) - [Code: Check for Anagram.py](./11.%20Check%20for%20Anagram.py)
 12. [Leftmost Repeating Character](#leftmost-repeating-character) - [Code: Leftmost Repeating Character.py](./12.%20Leftmost%20Repeating%20Character.py)
@@ -37,7 +37,7 @@ line"""             # Triple quotes (preserves newlines)
 ---
 
 ## Strings in Python
-**📁 Implementation:** [Strings in python.py](./1.%20Strings%20in%20python.py)
+**📁 Implementation:** [Strings in python.py](./01.%20Strings%20in%20python.py)
 
 ### Core Concepts
 
@@ -135,7 +135,7 @@ s = ''.join(chars)
 ---
 
 ## Escape Sequences and Raw Strings
-**📁 Implementation:** [Escape Sequences.py](./2.%20Escape%20Sequences.py)
+**📁 Implementation:** [Escape Sequences.py](./02.%20Escape%20Sequences.py)
 
 ### Escape Sequences
 
@@ -210,7 +210,7 @@ path = r"C:\folder" + "\\"  # ✅ Workaround
 ---
 
 ## String Formatting
-**📁 Implementation:** [String formatting.py](./3.%20String%20formatting.py)
+**📁 Implementation:** [String formatting.py](./03.%20String%20formatting.py)
 
 ### 1. Old Style (% Operator) - C-style
 
@@ -298,7 +298,7 @@ s = f"Hello {name}, you are {age}"
 ---
 
 ## String Comparison
-**📁 Implementation:** [String Comparison.py](./4.%20String%20Comparison.py)
+**📁 Implementation:** [String Comparison.py](./04.%20String%20Comparison.py)
 
 ### Comparison Operators
 
@@ -353,7 +353,7 @@ sorted(words, key=str.lower)  # ['Apple', 'banana', 'cherry']
 ---
 
 ## Substring Based Operations
-**📁 Implementation:** [String operations using substring.py](./5.%20String%20operations%20using%20substring.py)
+**📁 Implementation:** [String operations using substring.py](./05.%20String%20operations%20using%20substring.py)
 
 ### String Slicing
 
@@ -420,7 +420,7 @@ s = "Ha" * 3  # "HaHaHa"
 ---
 
 ## Common Built-in String Operations
-**📁 Implementation:** [String operations (2).py](./6.%20String%20operations%20(2).py)
+**📁 Implementation:** [String operations (2).py](./06.%20String%20operations%20(2).py)
 
 ### 1. Length: len()
 ```python
@@ -556,7 +556,7 @@ s.count('ll')      # 1
 ---
 
 ## Reverse a String
-**📁 Implementation:** [Reverse a string.py](./7.%20Reverse%20a%20string.py)
+**📁 Implementation:** [Reverse a string.py](./07.%20Reverse%20a%20string.py)
 
 ### Problem
 Reverse the order of characters in a string.
@@ -617,7 +617,7 @@ All approaches: **O(n)** - must process each character
 ---
 
 ## Check if a String is Rotated
-**📁 Implementation:** [Check if a string is rotated.py](./8.%20Check%20if%20a%20string%20is%20rotated.py)
+**📁 Implementation:** [Check if a string is rotated.py](./08.%20Check%20if%20a%20string%20is%20rotated.py)
 
 ### Problem
 Check if string s2 is a rotation of string s1.
@@ -675,7 +675,7 @@ def is_rotation_manual(s1, s2):
 ---
 
 ## Check for Palindrome
-**📁 Implementation:** [Check for palindrome.py](./9.%20Check%20for%20palindrome.py)
+**📁 Implementation:** [Check for palindrome.py](./09.%20Check%20for%20palindrome.py)
 
 ### Problem
 Check if a string reads the same forwards and backwards.

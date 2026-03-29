@@ -7,50 +7,50 @@ A comprehensive collection of DSA problems and solutions organized by topic. Eac
 ## 📚 Completed Topics
 
 ### 1. Python Refresher
-**Status:** ✅ Complete  
-Basic Python concepts and syntax refresher.
+**Status:** ✅ Complete
+Basic Python concepts and syntax refresher including OOP, decorators, list operations, and more.
 
-📁 [Go to folder](./1.%20Python%20Refresher/)
+📁 [Go to folder](./01.%20Python%20Refresher/) | 📖 [View detailed readme](./01.%20Python%20Refresher/readme.md)
 
 ---
 
 ### 2. Mathematics
-**Status:** ✅ Complete  
+**Status:** ✅ Complete
 Mathematical algorithms and number theory problems including GCD, LCM, prime numbers, factorization, and more.
 
-📁 [Go to folder](./2.%20Mathematics/) | 📖 [View detailed readme](./2.%20Mathematics/readme.md)
+📁 [Go to folder](./02.%20Mathematics/) | 📖 [View detailed readme](./02.%20Mathematics/readme.md)
 
 ---
 
 ### 3. Lists
-**Status:** ✅ Complete  
+**Status:** ✅ Complete
 Essential list operations and algorithms in Python.
 
-📁 [Go to folder](./3.%20Lists/) | 📖 [View detailed readme](./3.%20Lists/readme.md)
+📁 [Go to folder](./03.%20Lists/) | 📖 [View detailed readme](./03.%20Lists/readme.md)
 
 ---
 
 ### 4. Recursion
-**Status:** ✅ Complete  
+**Status:** ✅ Complete
 Recursive problem-solving techniques and patterns.
 
-📁 [Go to folder](./4.%20Recursion/) | 📖 [View detailed readme](./4.%20Recursion/readme.md)
+📁 [Go to folder](./04.%20Recursion/) | 📖 [View detailed readme](./04.%20Recursion/readme.md)
 
 ---
 
 ### 5. Searching
-**Status:** ✅ Complete  
+**Status:** ✅ Complete
 Searching algorithms with focus on binary search and its variations.
 
-📁 [Go to folder](./5.%20Searching/) | 📖 [View detailed readme](./5.%20Searching/readme.md)
+📁 [Go to folder](./05.%20Searching/) | 📖 [View detailed readme](./05.%20Searching/readme.md)
 
 ---
 
 ### 6. Sorting
-**Status:** ✅ Complete  
+**Status:** ✅ Complete
 Comprehensive coverage of sorting algorithms with complexity analysis.
 
-📁 [Go to folder](./6.%20Sorting/) | 📖 [View detailed readme](./6.%20Sorting/readme.md)
+📁 [Go to folder](./06.%20Sorting/) | 📖 [View detailed readme](./06.%20Sorting/readme.md)
 
 ---
 
@@ -58,54 +58,59 @@ Comprehensive coverage of sorting algorithms with complexity analysis.
 **Status:** ✅ Complete
 Hash tables, hash maps, and collision handling techniques.
 
-📁 [Go to folder](./7.%20Hashing/) | 📖 [View detailed readme](./7.%20Hashing/readme.md)
+📁 [Go to folder](./07.%20Hashing/) | 📖 [View detailed readme](./07.%20Hashing/readme.md)
 
 ---
 
-### 8. String
+### 8. Strings
 **Status:** ✅ Complete
 String manipulation, pattern matching, and string algorithms.
 
-📁 [Go to folder](./8.%20Strings/) | 📖 [View detailed readme](./8.%20Strings/readme.md)
+📁 [Go to folder](./08.%20Strings/) | 📖 [View detailed readme](./08.%20Strings/readme.md)
 
 ---
 
-## 🚧 Upcoming Topics
+### 9. Linked Lists
+**Status:** ✅ Complete
+Singly linked list operations: traversal, insertion, deletion, and reversal.
 
-### 9. Linked List
-Singly, doubly, and circular linked lists with operations.
-
-📁 [Go to folder](./9.%20Linked%20Lists/)
+📁 [Go to folder](./09.%20Linked%20Lists/) | 📖 [View detailed readme](./09.%20Linked%20Lists/readme.md)
 
 ---
 
 ### 10. Circular Linked List
+**Status:** ✅ Complete
 Circular linked list implementations and applications.
 
-📁 [Go to folder](./10.%20Circular%20Linked%20List/)
+📁 [Go to folder](./10.%20Circular%20Linked%20List/) | 📖 [View detailed readme](./10.%20Circular%20Linked%20List/readme.md)
 
 ---
 
 ### 11. Doubly Linked List
-Doubly linked list operations and use cases.
+**Status:** ✅ Complete
+Doubly linked list operations with bidirectional traversal.
 
-📁 [Go to folder](./11.%20Doubly%20Linked%20List/)
+📁 [Go to folder](./11.%20Doubly%20Linked%20List/) | 📖 [View detailed readme](./11.%20Doubly%20Linked%20List/readme.md)
 
 ---
 
 ### 12. Stack
-Stack data structure and applications.
+**Status:** ✅ Complete
+Stack data structure: implementations, applications, and expression conversions.
 
-📁 [Go to folder](./12.%20Stack/)
+📁 [Go to folder](./12.%20Stack/) | 📖 [View detailed readme](./12.%20Stack/readme.md)
 
 ---
 
 ### 13. Queue
-Queue implementations and variants.
+**Status:** ✅ Complete
+Queue implementations (list, deque, linked list, circular) and variants.
 
-📁 [Go to folder](./13.%20Queue/)
+📁 [Go to folder](./13.%20Queue/) | 📖 [View detailed readme](./13.%20Queue/readme.md)
 
 ---
+
+## 🚧 Upcoming Topics
 
 ### 14. Deque
 Double-ended queue operations.
@@ -152,19 +157,42 @@ Min-heap, max-heap, and priority queues.
 
 ### For Beginners
 Start with the following sequence:
-1. **Mathematics** - Build problem-solving foundation
-2. **Lists** - Master basic data structure operations
-3. **Recursion** - Learn recursive thinking
-4. **Searching** - Understand binary search
-5. **Sorting** - Compare different algorithms
+1. **Python Refresher** - Build programming foundation
+2. **Mathematics** - Build problem-solving foundation
+3. **Lists** - Master basic data structure operations
+4. **Recursion** - Learn recursive thinking
+5. **Searching** - Understand binary search
+6. **Sorting** - Compare different algorithms
 
 ### For Interview Preparation
 Focus on these high-frequency topics:
 - **Sorting & Searching** - Most common in coding interviews
 - **Hashing** - Fast lookups and counting
-- **Linked List** - Pointer manipulation
+- **Linked Lists** - Pointer manipulation
 - **Stack & Queue** - Implementation and applications
 - **Tree & BST** - Hierarchical data structures
+
+---
+
+## 📊 Progress Overview
+
+| Topic | Status | Problems |
+|-------|--------|----------|
+| Python Refresher | ✅ | 15 |
+| Mathematics | ✅ | 13 |
+| Lists | ✅ | 10 |
+| Recursion | ✅ | 7 |
+| Searching | ✅ | 7 |
+| Sorting | ✅ | 18 |
+| Hashing | ✅ | 8 |
+| Strings | ✅ | 14 |
+| Linked Lists | ✅ | 16 |
+| Circular Linked List | ✅ | 5 |
+| Doubly Linked List | ✅ | 6 |
+| Stack | ✅ | 9 |
+| Queue | ✅ | 7 |
+
+**Total Completed:** 135 problems across 13 topics
 
 ---
 
@@ -177,5 +205,5 @@ Focus on these high-frequency topics:
 
 ---
 
-**Last Updated:** January 2026  
-**Status:** Active Development - Currently completing Sorting section
+**Last Updated:** March 2026
+**Status:** Active Development - Currently completed through Queue section

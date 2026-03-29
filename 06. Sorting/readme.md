@@ -1,20 +1,24 @@
 # Sorting Algorithms - Complete Reference Guide
 
 ## Table of Contents
-1. [Bubble Sort](#bubble-sort) - [Code: Bubble Sort.py](./3.%20Bubble%20Sort.py)
-2. [Bubble Sort Optimised](#bubble-sort-optimised) - [Code: Bubble Sort Optimised.py](./4.%20Bubble%20Sort%20Optimised.py)
-3. [Selection Sort](#selection-sort) - [Code: Selection Sort.py](./5.%20Selection%20Sort.py)
-4. [Insertion Sort](#insertion-sort) - [Code: Insertion Sort.py](./6.%20Insertion%20Sort.py)
-5. [Merge Sort](#merge-sort) - [Code: Merging two sorted arrays.py](./7.%20Merging%20two%20sorted%20arrays.py), [Merge Subarrays.py](./8.%20Merge%20Subarrays.py), [Merge Sort.py](./9.%20Merge%20Sort.py)
-6. [Quick Sort](#quick-sort) - [Code: Lomuto's Partition.py](./14.%20Lomuto's%20Partition.py), [Hoarse's Partition.py](./15.%20Hoarse's%20Partition.py), [QuickSort using Lomuto.py](./16.%20QuickSort%20using%20Lomuto.py), [QuickSort using Hoarse.py](./17.%20QuickSort%20using%20Hoarse.py)
-7. [Heap Sort](#heap-sort) - [Code: Heap Sort.py](./18.%20Heap%20Sort.py)
-8. [Additional Operations](#additional-operations)
-9. [Comparison Summary](#comparison-summary)
+1. [Sorting User Defined Objects](#sorting-user-defined-objects) - [Code: 01. Sorting user defined objects.py](./01.%20Sorting%20user%20defined%20objects.py)
+2. [Sorting using __lt__ method](#sorting-using-lt-method) - [Code: 02. Sorting using __lt__ method.py](./02.%20Sorting%20using%20__lt__%20method.py)
+3. [Bubble Sort](#bubble-sort) - [Code: 03. Bubble Sort.py](./03.%20Bubble%20Sort.py)
+4. [Bubble Sort Optimised](#bubble-sort-optimised) - [Code: 04. Bubble Sort Optimised.py](./04.%20Bubble%20Sort%20Optimised.py)
+5. [Selection Sort](#selection-sort) - [Code: 05. Selection Sort.py](./05.%20Selection%20Sort.py)
+6. [Insertion Sort](#insertion-sort) - [Code: 06. Insertion Sort.py](./06.%20Insertion%20Sort.py)
+7. [Merge Sort](#merge-sort) - [Code: 07. Merging two sorted arrays.py](./07.%20Merging%20two%20sorted%20arrays.py), [08. Merge Subarrays.py](./08.%20Merge%20Subarrays.py), [09. Merge Sort.py](./09.%20Merge%20Sort.py)
+8. [Union and Intersection](#union-and-intersection) - [Code: 10. Union of two sorted array.py](./10.%20Union%20of%20two%20sorted%20array.py), [11. Intersection of two sorted arrays.py](./11.%20Intersection%20of%20two%20sorted%20arrays.py)
+9. [Count Inversions](#count-inversions) - [Code: 12. Count inversions in array.py](./12.%20Count%20inversions%20in%20array.py)
+10. [Partitioning](#partitioning) - [Code: 13. Partition of a given array.py](./13.%20Partition%20of%20a%20given%20array.py), [14. Lomuto's Partition.py](./14.%20Lomuto's%20Partition.py), [15. Hoare's Partition.py](./15.%20Hoare's%20Partition.py)
+11. [Quick Sort](#quick-sort) - [Code: 16. QuickSort using Lomuto.py](./16.%20QuickSort%20using%20Lomuto.py), [17. QuickSort using Hoare.py](./17.%20QuickSort%20using%20Hoare.py)
+12. [Heap Sort](#heap-sort) - [Code: 18. Heap Sort.py](./18.%20Heap%20Sort.py)
+13. [Comparison Summary](#comparison-summary)
 
 ---
 
 ## Bubble Sort
-**📁 Implementation:** [3. Bubble Sort.py](./3.%20Bubble%20Sort.py)
+**📁 Implementation:** [03. Bubble Sort.py](./03.%20Bubble%20Sort.py)
 
 ### Logic
 Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they're in the wrong order. This process is repeated until the list is sorted. The largest element "bubbles up" to its correct position in each pass.
@@ -49,7 +53,7 @@ The optimized version tracks whether any swaps occurred in a pass. If no swaps h
 ---
 
 ## Bubble Sort Optimised
-**📁 Implementation:** [4. Bubble Sort Optimised.py](./4.%20Bubble%20Sort%20Optimised.py)
+**📁 Implementation:** [04. Bubble Sort Optimised.py](./04.%20Bubble%20Sort%20Optimised.py)
 
 ### Logic
 The optimized version of Bubble Sort adds a flag to track whether any swaps occurred during a pass. If no swaps happen in a complete pass, the array is already sorted and the algorithm can terminate early, avoiding unnecessary iterations.
@@ -86,7 +90,7 @@ Selection Sort divides the array into sorted and unsorted regions. It repeatedly
 ---
 
 ## Insertion Sort
-**📁 Implementation:** [6. Insertion Sort.py](./6.%20Insertion%20Sort.py)
+**📁 Implementation:** [06. Insertion Sort.py](./06.%20Insertion%20Sort.py)
 
 ### Logic
 Insertion Sort builds the final sorted array one element at a time. It picks each element and inserts it into its correct position among the previously sorted elements, similar to sorting playing cards in your hand.
@@ -119,9 +123,9 @@ Insertion Sort builds the final sorted array one element at a time. It picks eac
 
 ## Merge Sort
 **📁 Implementation:** 
-- [7. Merging two sorted arrays.py](./7.%20Merging%20two%20sorted%20arrays.py) - Base merge operation
-- [8. Merge Subarrays.py](./8.%20Merge%20Subarrays.py) - Merging subarrays within single array
-- [9. Merge Sort.py](./9.%20Merge%20Sort.py) - Complete recursive merge sort
+- [07. Merging two sorted arrays.py](./07.%20Merging%20two%20sorted%20arrays.py) - Base merge operation
+- [08. Merge Subarrays.py](./08.%20Merge%20Subarrays.py) - Merging subarrays within single array
+- [09. Merge Sort.py](./09.%20Merge%20Sort.py) - Complete recursive merge sort
 
 ### Logic
 Merge Sort is a divide-and-conquer algorithm that divides the array into two halves, recursively sorts them, and then merges the sorted halves back together.

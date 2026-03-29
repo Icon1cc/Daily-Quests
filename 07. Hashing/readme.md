@@ -1,14 +1,14 @@
 # Hashing - Complete Reference Guide
 
 ## Table of Contents
-1. [Direct Address Table](#direct-address-table) - [Code: 1. Direct address table.py](./1.%20Direct%20address%20table.py)
-2. [Chaining](#chaining) - [Code: 2. Chaining.py](./2.%20Chaining.py)
-3. [Open Addressing](#open-addressing) - [Code: 3. Open Addressing.py](./3.%20Open%20Addressing.py)
-4. [Double Hashing](#double-hashing) - [Code: 4. Double Hashing.py](./4.%20Double%20Hashing.py)
-5. [Frequencies of Array Elements](#frequencies-of-array-elements) - [Code: 5. Frequencies of Array Elements.py](./5.%20Frequencies%20of%20Array%20Elements.py)
-6. [Set Operations](#set-operations) - [Code: 6. All operations in a set.py](./6.%20All%20operations%20in%20a%20set.py)
-7. [Dictionary Operations](#dictionary-operations) - [Code: 7. All operations in a dictionary.py](./7.%20All%20operations%20in%20a%20dictionary.py)
-8. [Count Distinct Elements](#count-distinct-elements) - [Code: 8. Count distinct element in a list.py](./8.%20Count%20distinct%20element%20in%20a%20list.py)
+1. [Direct Address Table](#direct-address-table) - [Code: 01. Direct address table.py](./01.%20Direct%20address%20table.py)
+2. [Chaining](#chaining) - [Code: 02. Chaining.py](./02.%20Chaining.py)
+3. [Open Addressing](#open-addressing) - [Code: 03. Open Addressing.py](./03.%20Open%20Addressing.py)
+4. [Double Hashing](#double-hashing) - [Code: 04. Double Hashing.py](./04.%20Double%20Hashing.py)
+5. [Frequencies of Array Elements](#frequencies-of-array-elements) - [Code: 05. Frequencies of Array Elements.py](./05.%20Frequencies%20of%20Array%20Elements.py)
+6. [Set Operations](#set-operations) - [Code: 06. All operations in set.py](./06.%20All%20operations%20in%20set.py)
+7. [Dictionary Operations](#dictionary-operations) - [Code: 07. All operations in a dictionary.py](./07.%20All%20operations%20in%20a%20dictionary.py)
+8. [Count Distinct Elements](#count-distinct-elements) - [Code: 08. Count distinct element in a list.py](./08.%20Count%20distinct%20element%20in%20a%20list.py)
 
 ---
 
@@ -40,7 +40,7 @@ When two keys hash to the same index:
 ---
 
 ## Direct Address Table
-**📁 Implementation:** [1. Direct address table.py](./1.%20Direct%20address%20table.py)
+**📁 Implementation:** [01. Direct address table.py](./01.%20Direct%20address%20table.py)
 
 ### Problem
 Store and retrieve elements where keys are small integers within a known range.
@@ -103,7 +103,7 @@ Index:   0    1    2   3   4   5   6    7    8   9    10   11   12
 ---
 
 ## Chaining
-**📁 Implementation:** [2. Chaining.py](./2.%20Chaining.py)
+**📁 Implementation:** [02. Chaining.py](./02.%20Chaining.py)
 
 ### Problem
 Handle hash collisions by storing multiple elements at the same index.
@@ -194,7 +194,7 @@ Index 6: → [20]
 ---
 
 ## Open Addressing
-**📁 Implementation:** [3. Open Addressing.py](./3.%20Open%20Addressing.py)
+**📁 Implementation:** [03. Open Addressing.py](./03.%20Open%20Addressing.py)
 
 ### Problem
 Handle collisions by finding another empty slot in the hash table itself (no external chaining).
@@ -316,7 +316,7 @@ Where α = load factor (should be < 0.7 for good performance)
 ---
 
 ## Double Hashing
-**📁 Implementation:** [4. Double Hashing.py](./4.%20Double%20Hashing.py)
+**📁 Implementation:** [04. Double Hashing.py](./04.%20Double%20Hashing.py)
 
 ### Problem
 Eliminate clustering in open addressing by using a second hash function for probing.
@@ -417,7 +417,7 @@ Better than linear probing due to less clustering.
 ---
 
 ## Frequencies of Array Elements
-**📁 Implementation:** [5. Frequencies of Array Elements.py](./5.%20Frequencies%20of%20Array%20Elements.py)
+**📁 Implementation:** [05. Frequencies of Array Elements.py](./05.%20Frequencies%20of%20Array%20Elements.py)
 
 ### Problem
 Count the frequency (number of occurrences) of each element in an array.
@@ -497,7 +497,7 @@ for element, count in freq.items():
 ---
 
 ## Set Operations
-**📁 Implementation:** [6. All operations in a set.py](./6.%20All%20operations%20in%20a%20set.py)
+**📁 Implementation:** [06. All operations in set.py](./06.%20All%20operations%20in%20set.py)
 
 ### Problem
 Perform various operations on sets: Add, Remove, Update, Union, Intersection, Difference, Symmetric Difference.
@@ -627,7 +627,7 @@ print(len(a))
 ---
 
 ## Dictionary Operations
-**📁 Implementation:** [7. All operations in a dictionary.py](./7.%20All%20operations%20in%20a%20dictionary.py)
+**📁 Implementation:** [07. All operations in a dictionary.py](./07.%20All%20operations%20in%20a%20dictionary.py)
 
 ### Problem
 Perform various operations on dictionaries: Add/Update, Remove (Pop), Search (Get), View Keys/Values, and Merge.
@@ -816,7 +816,7 @@ dd['key'].append('value')  # No KeyError
 ---
 
 ## Count Distinct Elements
-**📁 Implementation:** [8. Count distinct element in a list.py](./8.%20Count%20distinct%20element%20in%20a%20list.py)
+**📁 Implementation:** [08. Count distinct element in a list.py](./08.%20Count%20distinct%20element%20in%20a%20list.py)
 
 ### Problem
 Count the number of unique/distinct elements in a list.
